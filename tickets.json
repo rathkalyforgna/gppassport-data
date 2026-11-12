@@ -1,0 +1,1165 @@
+{
+  "version": 4,
+  "updated": "2026-11-10",
+  "events": [
+    {
+      "season": 2026,
+      "circuitId": "las-vegas",
+      "grandPrixName": "Las Vegas Grand Prix",
+      "locality": "Las Vegas",
+      "countryFlag": "🇺🇸",
+      "round": 21,
+      "raceStart": "2026-11-19",
+      "raceEnd": "2026-11-21",
+      "ticketURL": "https://www.f1lasvegasgp.com/",
+      "soldOut": false,
+      "priceFrom": {"amount": 50, "currency": "USD"},
+      "windows": [
+        {"kind": "presale", "title": "American Express 3-day presale", "start": "2026-05-05", "end": "2026-05-06"},
+        {"kind": "generalSale", "title": "General sale", "start": "2026-05-07", "end": null}
+      ],
+      "pricesAsOf": "2026-10-30",
+      "pricesNote": "Official starting prices incl. taxes and fees. Each tier gets pricier as cheaper ones sell out.",
+      "prices": [
+        {"ticket": "Flamingo Zone GA", "type": "generalAdmission", "amount": 492, "currency": "USD", "days": "3-day", "soldOut": true},
+        {"ticket": "T-Mobile Zone at Sphere GA", "type": "generalAdmission", "amount": 809, "currency": "USD", "days": "3-day"},
+        {"ticket": "Heineken Grandstands", "type": "grandstand", "amount": 925, "currency": "USD", "days": "3-day"},
+        {"ticket": "West Harmon Grandstand", "type": "grandstand", "amount": 1012, "currency": "USD", "days": "3-day"},
+        {"ticket": "Turn 3 Grandstand", "type": "grandstand", "amount": 1329, "currency": "USD", "days": "3-day"},
+        {"ticket": "T-Mobile Zone at Sphere Grandstand", "type": "grandstand", "amount": 1445, "currency": "USD", "days": "3-day"},
+        {"ticket": "Heineken Silver Main Grandstand", "type": "grandstand", "amount": 2051, "currency": "USD", "days": "3-day"},
+        {"ticket": "Club Paris", "type": "hospitality", "amount": 2542, "currency": "USD", "days": "3-day"}
+      ],
+      "note": "Saturday-night race. 'From' price is single-day Flamingo Zone GA (Thursday); 3-day GA starts at $492.",
+      "sources": [
+        "https://www.f1lasvegasgp.com/2026/05/tickets-on-sale-now/",
+        "https://www.ticketnews.com/2026/04/las-vegas-grand-prix-2026-ticket-deposits/"
+      ]
+    },
+    {
+      "season": 2026,
+      "circuitId": "qatar",
+      "grandPrixName": "Qatar Grand Prix",
+      "locality": "Lusail",
+      "countryFlag": "🇶🇦",
+      "round": 22,
+      "raceStart": "2026-11-27",
+      "raceEnd": "2026-11-29",
+      "ticketURL": "https://tickets.lcsc.qa",
+      "soldOut": false,
+      "priceFrom": {"amount": 600, "currency": "QAR"},
+      "windows": [
+        {"kind": "generalSale", "title": "General sale", "start": "2026-02-15", "end": null}
+      ],
+      "pricesAsOf": "2026-08-20",
+      "pricesNote": "Fixed official prices. Some zones, including parts of the Main Grandstand, sold out in August.",
+      "prices": [
+        {"ticket": "Lusail Hill GA", "type": "generalAdmission", "amount": 600, "currency": "QAR", "days": "3-day"},
+        {"ticket": "Turn 3 Grandstand", "type": "grandstand", "amount": 1000, "currency": "QAR", "days": "3-day"},
+        {"ticket": "North Grandstand", "type": "grandstand", "amount": 1500, "currency": "QAR", "days": "3-day"},
+        {"ticket": "Main Grandstand", "type": "grandstand", "amount": 2000, "currency": "QAR", "days": "3-day"},
+        {"ticket": "Lusail Hill Lounge", "type": "hospitality", "amount": 10946, "currency": "QAR", "days": "3-day"}
+      ],
+      "note": "'From' price is a 3-day Lusail Hill General Admission ticket. Friday-only GA is also available.",
+      "sources": [
+        "https://www.lcsc.qa/formula-1r-qatar-airways-qatar-grand-prix-2026",
+        "https://tickets.lcsc.qa"
+      ]
+    },
+    {
+      "season": 2026,
+      "circuitId": "abu-dhabi",
+      "grandPrixName": "Abu Dhabi Grand Prix",
+      "locality": "Abu Dhabi",
+      "countryFlag": "🇦🇪",
+      "round": 23,
+      "raceStart": "2026-12-04",
+      "raceEnd": "2026-12-06",
+      "ticketURL": "https://ticketing.formula1.com/abu-dhabi/",
+      "soldOut": false,
+      "priceFrom": null,
+      "windows": [
+        {"kind": "generalSale", "title": "General sale", "start": "2026-02-12", "end": null}
+      ],
+      "pricesAsOf": "2026-03-20",
+      "pricesNote": "Lowest-phase prices — dynamic pricing has raised them since. A 3-day Abu Dhabi Hill ticket was added from AED 995.",
+      "prices": [
+        {"ticket": "Abu Dhabi Hill", "type": "generalAdmission", "amount": 1695, "currency": "AED", "days": "4-day", "soldOut": true},
+        {"ticket": "North Straight Grandstand", "type": "grandstand", "amount": 1895, "currency": "AED", "days": "4-day"},
+        {"ticket": "Marina Grandstand", "type": "grandstand", "amount": 2395, "currency": "AED", "days": "4-day"},
+        {"ticket": "North Grandstand", "type": "grandstand", "amount": 2595, "currency": "AED", "days": "4-day"},
+        {"ticket": "West Grandstand", "type": "grandstand", "amount": 2995, "currency": "AED", "days": "4-day"},
+        {"ticket": "Main Grandstand", "type": "grandstand", "amount": 3495, "currency": "AED", "days": "4-day", "soldOut": true},
+        {"ticket": "West Grandstand Club", "type": "hospitality", "amount": 3695, "currency": "AED", "days": "4-day"},
+        {"ticket": "North Yas Suite", "type": "hospitality", "amount": 4295, "currency": "AED", "days": "4-day"}
+      ],
+      "note": "Filling up: Main Grandstand 4-day and Abu Dhabi Hill tickets are reported sold out; North, North Straight and West Straight were still available. Dynamic pricing.",
+      "sources": [
+        "https://whatson.ae/2026/02/tickets-for-abu-dhabi-grand-prix-2026-now-on-sale/",
+        "https://www.yasmarinacircuit.com/en/"
+      ]
+    },
+    {
+      "season": 2027,
+      "circuitId": "bahrain",
+      "grandPrixName": "Bahrain Grand Prix",
+      "locality": "Sakhir",
+      "countryFlag": "🇧🇭",
+      "round": 1,
+      "raceStart": "2027-03-12",
+      "raceEnd": "2027-03-14",
+      "ticketURL": "https://www.bahraingp.com/blog/events/f1-2027/",
+      "soldOut": false,
+      "priceFrom": null,
+      "windows": [
+        {"kind": "generalSale", "title": "2027 tickets on sale", "start": "2026-09-20", "end": null},
+        {"kind": "earlyBird", "title": "Early bird — up to 20% off 3-day grandstands", "start": "2026-09-20", "end": "2026-10-18"},
+        {"kind": "waitlist", "title": "General Admission waitlist", "start": null, "end": null}
+      ],
+      "pricesAsOf": "2026-11-10",
+      "pricesNote": "Full prices. A 15% early-bird discount has been running on top.",
+      "prices": [
+        {"ticket": "Victory Grandstand", "type": "grandstand", "amount": 70, "currency": "BHD", "days": "3-day"},
+        {"ticket": "University Grandstand", "type": "grandstand", "amount": 75, "currency": "BHD", "days": "3-day"},
+        {"ticket": "Beyon Grandstand", "type": "grandstand", "amount": 130, "currency": "BHD", "days": "3-day"},
+        {"ticket": "Turn 1 Grandstand", "type": "grandstand", "amount": 140, "currency": "BHD", "days": "3-day"},
+        {"ticket": "Main Grandstand", "type": "grandstand", "amount": 195, "currency": "BHD", "days": "3-day"}
+      ],
+      "note": "Season opener and Bahrain's first Sprint weekend. General Admission is waitlist-only for now.",
+      "sources": [
+        "https://www.bahraingp.com/blog/news/bic-launches-ticket-sales-for-formula-1-gulf-air-bahrain-grand-prix-2027/",
+        "https://www.bahraingp.com/blog/news/early-bird-offer-on-tickets-to-the-formula-1-gulf-air-bahrain-grand-prix-2027-to-end-on-sunday/",
+        "https://ticketing.formula1.com/tickets/en/bahrain/general-admission-f1-sakhir-waitlist"
+      ]
+    },
+    {
+      "season": 2027,
+      "circuitId": "saudi-arabia",
+      "grandPrixName": "Saudi Arabian Grand Prix",
+      "locality": "Jeddah",
+      "countryFlag": "🇸🇦",
+      "round": 2,
+      "raceStart": "2027-03-19",
+      "raceEnd": "2027-03-21",
+      "ticketURL": "https://tickets.saudiarabiangp.com/en",
+      "soldOut": false,
+      "priceFrom": null,
+      "windows": [
+        {"kind": "generalSale", "title": "On sale — Super Early Bird pricing", "start": "2026-08-25", "end": null}
+      ],
+      "pricesAsOf": "2026-08-25",
+      "pricesNote": "Super Early Bird launch prices — may rise.",
+      "prices": [
+        {"ticket": "General Admission", "type": "generalAdmission", "amount": 442, "currency": "SAR", "days": "3-day"},
+        {"ticket": "Grandstand Central C", "type": "grandstand", "amount": 850, "currency": "SAR", "days": "3-day"},
+        {"ticket": "Grandstand Main B", "type": "grandstand", "amount": 1648, "currency": "SAR", "days": "3-day"},
+        {"ticket": "Grandstand Main A", "type": "grandstand", "amount": 2448, "currency": "SAR", "days": "3-day"},
+        {"ticket": "Hospitality", "type": "hospitality", "amount": 11469, "currency": "SAR", "days": "3-day"}
+      ],
+      "note": "Super Early Bird launched with 15% off 3-day tickets (10% off Premium Lounge). No end date has been announced.",
+      "sources": [
+        "https://www.spa.gov.sa/en/N2661720",
+        "https://www.arabnews.com/motorsport/saudi-arabian-grand-prix-2027-launches-early-bird-tickets-2655828"
+      ]
+    },
+    {
+      "season": 2027,
+      "circuitId": "australia",
+      "grandPrixName": "Australian Grand Prix",
+      "locality": "Melbourne",
+      "countryFlag": "🇦🇺",
+      "round": 3,
+      "raceStart": "2027-04-02",
+      "raceEnd": "2027-04-04",
+      "ticketURL": "https://www.grandprix.com.au",
+      "soldOut": false,
+      "priceFrom": {"amount": 45, "currency": "AUD"},
+      "windows": [
+        {"kind": "presale", "title": "Albert Park Circuit Club members", "start": "2026-10-01", "end": "2026-10-05"},
+        {"kind": "presale", "title": "Amex Card Member presale", "start": "2026-10-02", "end": "2026-10-04"},
+        {"kind": "generalSale", "title": "General sale (Ticketmaster)", "start": "2026-10-06", "end": null}
+      ],
+      "pricesAsOf": "2026-10-06",
+      "pricesNote": "Official 'from' prices; dynamic pricing applies. Single-day Park Passes start from A$45.",
+      "prices": [
+        {"ticket": "Park Pass", "type": "generalAdmission", "amount": 425, "currency": "AUD", "days": "4-day"},
+        {"ticket": "Waite Grandstand", "type": "grandstand", "amount": 620, "currency": "AUD", "days": "4-day"},
+        {"ticket": "Schumacher Grandstand", "type": "grandstand", "amount": 760, "currency": "AUD", "days": "4-day"},
+        {"ticket": "Jones Grandstand", "type": "grandstand", "amount": 910, "currency": "AUD", "days": "4-day"},
+        {"ticket": "Fangio Grandstand", "type": "grandstand", "amount": 990, "currency": "AUD", "days": "4-day"},
+        {"ticket": "Piastri Grandstand", "type": "grandstand", "amount": 1140, "currency": "AUD", "days": "4-day"},
+        {"ticket": "Hospitality", "type": "hospitality", "amount": 2450, "currency": "AUD", "days": "3-day"}
+      ],
+      "note": "Melbourne's first Sprint weekend. Gates open Thursday 1 April. 'From' price is a single-day Park Pass.",
+      "sources": [
+        "https://autoaction.com.au/2026/09/16/australian-grand-prix-2027-f1-sprint-ticket-sale-dates",
+        "https://www.grandprix.com.au/en/tickets/faqs"
+      ]
+    },
+    {
+      "season": 2027,
+      "circuitId": "japan",
+      "grandPrixName": "Japanese Grand Prix",
+      "locality": "Suzuka",
+      "countryFlag": "🇯🇵",
+      "round": 4,
+      "raceStart": "2027-04-09",
+      "raceEnd": "2027-04-11",
+      "ticketURL": "https://www.suzukacircuit.jp/eng/f1/ticket/",
+      "soldOut": false,
+      "priceFrom": {"amount": 22000, "currency": "JPY"},
+      "windows": [
+        {"kind": "presale", "title": "Campsite tickets", "start": "2026-11-13", "end": null},
+        {"kind": "generalSale", "title": "General sale (MobilityStation, 11:00 JST)", "start": "2026-11-15", "end": null},
+        {"kind": "generalSale", "title": "West Area tickets on Asoview!", "start": "2026-11-16", "end": null}
+      ],
+      "pricesAsOf": "2026-11-10",
+      "pricesNote": "Official fixed prices, about 20% above 2026. On sale 15 Nov at 11:00 JST.",
+      "prices": [
+        {"ticket": "West Area Ticket", "type": "generalAdmission", "amount": 22000, "currency": "JPY", "days": "Fri–Sun"},
+        {"ticket": "S Seat (Family Seat)", "type": "grandstand", "amount": 72000, "currency": "JPY", "days": "Fri–Sun"},
+        {"ticket": "Grandstand B2", "type": "grandstand", "amount": 89600, "currency": "JPY", "days": "Fri–Sun"},
+        {"ticket": "Grandstand Q2", "type": "grandstand", "amount": 105600, "currency": "JPY", "days": "Fri–Sun"},
+        {"ticket": "Grandstand V1", "type": "grandstand", "amount": 112000, "currency": "JPY", "days": "Fri–Sun"},
+        {"ticket": "Grandstand V2", "type": "grandstand", "amount": 120000, "currency": "JPY", "days": "Fri–Sun"},
+        {"ticket": "F1 Paddock Club", "type": "paddockClub", "amount": 1200000, "currency": "JPY", "days": "Fri–Sun"}
+      ],
+      "note": "Suzuka's first Sprint weekend. Launch day uses a virtual queue for logged-in MobilityStation members. 'From' price is a 3-day West Area adult ticket.",
+      "sources": [
+        "https://www.suzukacircuit.jp/eng/f1/ticket/"
+      ]
+    },
+    {
+      "season": 2027,
+      "circuitId": "china",
+      "grandPrixName": "Chinese Grand Prix",
+      "locality": "Shanghai",
+      "countryFlag": "🇨🇳",
+      "round": 5,
+      "raceStart": "2027-04-16",
+      "raceEnd": "2027-04-18",
+      "ticketURL": "https://ticketing.formula1.com/china/",
+      "soldOut": false,
+      "priceFrom": null,
+      "windows": [
+        {"kind": "waitlist", "title": "Official F1 ticket store waitlist", "start": null, "end": null}
+      ],
+      "note": "No on-sale date yet. General sale has typically opened in December.",
+      "sources": [
+        "https://ticketing.formula1.com/china/"
+      ]
+    },
+    {
+      "season": 2027,
+      "circuitId": "miami",
+      "grandPrixName": "Miami Grand Prix",
+      "locality": "Miami",
+      "countryFlag": "🇺🇸",
+      "round": 6,
+      "raceStart": "2027-04-30",
+      "raceEnd": "2027-05-02",
+      "ticketURL": "https://f1miamigp.com/",
+      "soldOut": false,
+      "priceFrom": {"amount": 685, "currency": "USD"},
+      "windows": [
+        {"kind": "generalSale", "title": "Grandstands, hospitality & Paddock Club", "start": "2026-09-24", "end": null}
+      ],
+      "pricesAsOf": "2026-11-10",
+      "pricesNote": "Official starting prices; they rise with demand. Fees not included. Campus Pass price not set yet.",
+      "prices": [
+        {"ticket": "F1 Team Grandstands", "type": "grandstand", "amount": 685, "currency": "USD", "days": "3-day"},
+        {"ticket": "Beach Grandstands", "type": "grandstand", "amount": 695, "currency": "USD", "days": "3-day"},
+        {"ticket": "Marina Grandstands", "type": "grandstand", "amount": 730, "currency": "USD", "days": "3-day"},
+        {"ticket": "Grandstand Pass", "type": "grandstand", "amount": 845, "currency": "USD", "days": "3-day"},
+        {"ticket": "Turn 18 Grandstand", "type": "grandstand", "amount": 935, "currency": "USD", "days": "3-day"},
+        {"ticket": "Turn 1 North Grandstand", "type": "grandstand", "amount": 945, "currency": "USD", "days": "3-day"},
+        {"ticket": "Start/Finish Grandstand", "type": "grandstand", "amount": 1125, "currency": "USD", "days": "3-day"},
+        {"ticket": "MSC Yacht Club", "type": "hospitality", "amount": 4250, "currency": "USD", "days": "3-day"},
+        {"ticket": "72 Club (Paddock Club)", "type": "paddockClub", "amount": 8000, "currency": "USD", "days": "3-day"}
+      ],
+      "note": "Campus Passes aren't on sale yet. Every previous edition has sold out.",
+      "sources": [
+        "https://f1miamigp.com/news/press-release/tickets-on-sale-2027/"
+      ]
+    },
+    {
+      "season": 2027,
+      "circuitId": "canada",
+      "grandPrixName": "Canadian Grand Prix",
+      "locality": "Montréal",
+      "countryFlag": "🇨🇦",
+      "round": 7,
+      "raceStart": "2027-05-21",
+      "raceEnd": "2027-05-23",
+      "ticketURL": "https://gpcanada.ca/en/",
+      "soldOut": false,
+      "priceFrom": null,
+      "windows": [
+        {"kind": "waitlist", "title": "Sign up for the general-sale date", "start": null, "end": null}
+      ],
+      "note": "The presale has run, but the public sale planned for 24 September was postponed and no new date is set. Sprint weekend.",
+      "sources": [
+        "https://www.grandprix.com/news/canadian-grand-prix-postpones-2027-public-ticket-sale.html",
+        "https://gpcanada.ca/en/event/frequently-asked-questions/"
+      ]
+    },
+    {
+      "season": 2027,
+      "circuitId": "monaco",
+      "grandPrixName": "Monaco Grand Prix",
+      "locality": "Monte Carlo",
+      "countryFlag": "🇲🇨",
+      "round": 8,
+      "raceStart": "2027-06-04",
+      "raceEnd": "2027-06-06",
+      "ticketURL": "https://monaco-grandprix.com/en/edition/formula-1-grand-prix-de-monaco-2027/",
+      "soldOut": false,
+      "priceFrom": null,
+      "windows": [
+        {"kind": "presale", "title": "ACM members presale", "start": "2026-09-17", "end": "2026-09-30"},
+        {"kind": "generalSale", "title": "General sale", "start": "2026-10-01", "end": null}
+      ],
+      "pricesAsOf": "2026-09-30",
+      "pricesNote": "Official ACM prices. Rocher and Zone Z are sold per day — shown as the three-day total.",
+      "prices": [
+        {"ticket": "Secteur Rocher", "type": "generalAdmission", "amount": 350, "currency": "EUR", "days": "Fri–Sun"},
+        {"ticket": "Zone Z General Admission", "type": "generalAdmission", "amount": 525, "currency": "EUR", "days": "Fri–Sun"},
+        {"ticket": "Grandstand N / O Low / P", "type": "grandstand", "amount": 1440, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Grandstand T Low", "type": "grandstand", "amount": 1530, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Grandstand K", "type": "grandstand", "amount": 1620, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Grandstand A", "type": "grandstand", "amount": 1710, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Grandstand K Gold", "type": "grandstand", "amount": 1935, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Grandstand B Gold", "type": "grandstand", "amount": 2115, "currency": "EUR", "days": "3-day"}
+      ],
+      "note": "Monaco's first Sprint weekend. Hospitality packages are coming soon.",
+      "sources": [
+        "https://acm.mc/en/ticket-sales-are-now-open/"
+      ]
+    },
+    {
+      "season": 2027,
+      "circuitId": "portugal",
+      "grandPrixName": "Portuguese Grand Prix",
+      "locality": "Portimão",
+      "countryFlag": "🇵🇹",
+      "round": 9,
+      "raceStart": "2027-06-18",
+      "raceEnd": "2027-06-20",
+      "ticketURL": "https://portugalf1gp.com/en",
+      "soldOut": false,
+      "priceFrom": null,
+      "windows": [
+        {"kind": "generalSale", "title": "Phase 1 sale", "start": "2026-09-21", "end": null}
+      ],
+      "pricesAsOf": "2026-09-21",
+      "pricesNote": "Phase 1 prices — later sale phases cost more. Most grandstands sold out on day one.",
+      "prices": [
+        {"ticket": "General Admission", "type": "generalAdmission", "amount": 300, "currency": "EUR", "days": "3-day"},
+        {"ticket": "South Area Grandstand", "type": "grandstand", "amount": 400, "currency": "EUR", "days": "3-day"},
+        {"ticket": "First Corner Grandstand", "type": "grandstand", "amount": 500, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Portimão Grandstand", "type": "grandstand", "amount": 500, "currency": "EUR", "days": "3-day"},
+        {"ticket": "North Area Grandstand", "type": "grandstand", "amount": 600, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Grandstand Main – Lower Level", "type": "grandstand", "amount": 600, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Grandstand Main – Upper Level", "type": "grandstand", "amount": 700, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Champions Club", "type": "hospitality", "amount": 5610, "currency": "EUR", "days": "3-day"}
+      ],
+      "note": "F1 returns to Portugal for the first time since 2021. Prices rise across four sale phases.",
+      "sources": [
+        "https://portugalf1gp.com/en",
+        "https://observador.pt/2026/09/17/primeiros-bilhetes-para-o-regresso-da-formula-1-a-portugal-vao-custar-entre-300-e-700-euros/"
+      ]
+    },
+    {
+      "season": 2027,
+      "circuitId": "great-britain",
+      "grandPrixName": "British Grand Prix",
+      "locality": "Silverstone",
+      "countryFlag": "🇬🇧",
+      "round": 10,
+      "raceStart": "2027-07-02",
+      "raceEnd": "2027-07-04",
+      "ticketURL": "https://www.silverstone.co.uk/events/formula-1-british-grand-prix",
+      "soldOut": false,
+      "priceFrom": {"amount": 419, "currency": "GBP"},
+      "windows": [
+        {"kind": "presale", "title": "Silverstone Racing Club & partner presales", "start": "2026-09-16", "end": "2026-09-23"},
+        {"kind": "generalSale", "title": "General sale", "start": "2026-09-24", "end": null}
+      ],
+      "pricesAsOf": "2026-09-24",
+      "pricesNote": "Launch prices. Dynamic pricing has pushed them up since (GA now from £419). Fees not included.",
+      "prices": [
+        {"ticket": "General Admission", "type": "generalAdmission", "amount": 289, "currency": "GBP", "days": "3-day"},
+        {"ticket": "GA Plus", "type": "generalAdmission", "amount": 399, "currency": "GBP", "days": "3-day"},
+        {"ticket": "Copse", "type": "grandstand", "amount": 499, "currency": "GBP", "days": "3-day"},
+        {"ticket": "Village", "type": "grandstand", "amount": 529, "currency": "GBP", "days": "3-day"},
+        {"ticket": "Stowe", "type": "grandstand", "amount": 569, "currency": "GBP", "days": "3-day"},
+        {"ticket": "Club Corner", "type": "grandstand", "amount": 709, "currency": "GBP", "days": "3-day"},
+        {"ticket": "Hamilton Straight A", "type": "grandstand", "amount": 789, "currency": "GBP", "days": "3-day"},
+        {"ticket": "Club Silverstone", "type": "hospitality", "amount": 809, "currency": "GBP", "days": "3-day"},
+        {"ticket": "T1 VIP Enclosure", "type": "hospitality", "amount": 1359, "currency": "GBP", "days": "3-day"}
+      ],
+      "note": "Dynamic pricing — prices rise as tickets sell. Sprint weekend; gates open Thursday 1 July.",
+      "sources": [
+        "https://www.silverstone.co.uk/events/formula-1-british-grand-prix",
+        "https://www.motorsportmagazine.com/articles/single-seaters/f1/when-do-2027-british-grand-prix-tickets-go-on-sale/"
+      ]
+    },
+    {
+      "season": 2027,
+      "circuitId": "austria",
+      "grandPrixName": "Austrian Grand Prix",
+      "locality": "Spielberg",
+      "countryFlag": "🇦🇹",
+      "round": 11,
+      "raceStart": "2027-07-09",
+      "raceEnd": "2027-07-11",
+      "ticketURL": "https://tickets.redbullring.com",
+      "soldOut": false,
+      "priceFrom": null,
+      "windows": [
+        {"kind": "generalSale", "title": "2027 tickets on sale", "start": "2026-06-29", "end": null}
+      ],
+      "pricesAsOf": "2026-11-01",
+      "pricesNote": "Promoter prices incl. tax. Start-Ziel and all Red Bull grandstands have sold out.",
+      "prices": [
+        {"ticket": "General Admission", "type": "generalAdmission", "amount": 170, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Red Bull", "type": "grandstand", "amount": 290, "currency": "EUR", "days": "3-day", "soldOut": true},
+        {"ticket": "T10", "type": "grandstand", "amount": 435, "currency": "EUR", "days": "3-day"},
+        {"ticket": "T3", "type": "grandstand", "amount": 570, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Steiermark", "type": "grandstand", "amount": 730, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Red Bull A", "type": "grandstand", "amount": 730, "currency": "EUR", "days": "3-day", "soldOut": true},
+        {"ticket": "Start-Ziel", "type": "grandstand", "amount": 750, "currency": "EUR", "days": "3-day", "soldOut": true}
+      ],
+      "note": "Start-Ziel and the Red Bull grandstands are reported sold out. Some categories aren't on sale yet.",
+      "sources": [
+        "https://www.redbullring.com/en/news/formula-1-groser-preis-von-osterreich-get-your-ticket-now/"
+      ]
+    },
+    {
+      "season": 2027,
+      "circuitId": "belgium",
+      "grandPrixName": "Belgian Grand Prix",
+      "locality": "Spa-Francorchamps",
+      "countryFlag": "🇧🇪",
+      "round": 12,
+      "raceStart": "2027-07-23",
+      "raceEnd": "2027-07-25",
+      "ticketURL": "https://www.spagrandprix.com/en",
+      "soldOut": false,
+      "priceFrom": null,
+      "windows": [
+        {"kind": "generalSale", "title": "2027 tickets on sale", "start": null, "end": null}
+      ],
+      "pricesAsOf": "2026-11-10",
+      "pricesNote": "Official ticket office prices, sold in tiers that step up as they sell. €15 admin fee per order.",
+      "prices": [
+        {"ticket": "Bronze", "type": "generalAdmission", "amount": 215, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Bronze Bruxelles", "type": "generalAdmission", "amount": 310, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Combes", "type": "grandstand", "amount": 395, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Silver 1 Francorchamps", "type": "grandstand", "amount": 520, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Fanzone Grandstand", "type": "grandstand", "amount": 535, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Gold 1 Pit", "type": "grandstand", "amount": 895, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Gold 3 Eau-Rouge", "type": "grandstand", "amount": 1100, "currency": "EUR", "days": "3-day", "soldOut": true},
+        {"ticket": "Raidillon", "type": "hospitality", "amount": 2495, "currency": "EUR", "days": "3-day"}
+      ],
+      "note": "Spa now hosts in odd-numbered years, alternating with Barcelona.",
+      "sources": [
+        "https://www.spagrandprix.com/en"
+      ]
+    },
+    {
+      "season": 2027,
+      "circuitId": "hungary",
+      "grandPrixName": "Hungarian Grand Prix",
+      "locality": "Budapest",
+      "countryFlag": "🇭🇺",
+      "round": 13,
+      "raceStart": "2027-07-30",
+      "raceEnd": "2027-08-01",
+      "ticketURL": "https://www.gpticketshop.hu/Formula_1_HungarianGP/Formula_1.html",
+      "soldOut": false,
+      "priceFrom": null,
+      "windows": [
+        {"kind": "generalSale", "title": "2027 tickets on sale", "start": "2026-07-27", "end": null}
+      ],
+      "pricesAsOf": "2026-11-01",
+      "pricesNote": "Official ticket shop prices. Several grandstands have already sold out.",
+      "prices": [
+        {"ticket": "General Admission", "type": "generalAdmission", "amount": 170, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Fan Grandstand", "type": "grandstand", "amount": 270, "currency": "EUR", "days": "3-day", "soldOut": true},
+        {"ticket": "Apex 1", "type": "grandstand", "amount": 300, "currency": "EUR", "days": "3-day", "soldOut": true},
+        {"ticket": "Chicane 3", "type": "grandstand", "amount": 310, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Apex 2", "type": "grandstand", "amount": 340, "currency": "EUR", "days": "3-day"},
+        {"ticket": "T1", "type": "grandstand", "amount": 500, "currency": "EUR", "days": "3-day", "soldOut": true},
+        {"ticket": "Hungaroring", "type": "grandstand", "amount": 650, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Hungaroring Platinum", "type": "grandstand", "amount": 740, "currency": "EUR", "days": "3-day", "soldOut": true},
+        {"ticket": "F1 Fan Lounge", "type": "hospitality", "amount": 1950, "currency": "EUR", "days": "3-day"}
+      ],
+      "note": "Many grandstands are already sold out, including Platinum, T1, Grid and Fan.",
+      "sources": [
+        "https://www.gpticketshop.hu/Formula_1_HungarianGP/Formula_1.html"
+      ]
+    },
+    {
+      "season": 2027,
+      "circuitId": "italy",
+      "grandPrixName": "Italian Grand Prix",
+      "locality": "Monza",
+      "countryFlag": "🇮🇹",
+      "round": 14,
+      "raceStart": "2027-09-03",
+      "raceEnd": "2027-09-05",
+      "ticketURL": "https://www.monzanet.it/en/tickets/",
+      "soldOut": false,
+      "priceFrom": {"amount": 126, "currency": "EUR"},
+      "windows": [
+        {"kind": "presale", "title": "American Express presale", "start": "2026-09-17", "end": "2026-09-23"},
+        {"kind": "discount", "title": "Fidelity — 8% off for 2026 ticket holders", "start": "2026-09-17", "end": "2026-10-08"},
+        {"kind": "generalSale", "title": "General sale", "start": "2026-09-24", "end": null}
+      ],
+      "pricesAsOf": "2026-09-22",
+      "pricesNote": "Official Monza price list incl. VAT — up to 46% higher with the new Sprint. Under-11s get into GA free.",
+      "prices": [
+        {"ticket": "General Admission", "type": "generalAdmission", "amount": 126, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Gradinate Traguardo", "type": "grandstand", "amount": 351, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Laterale Parabolica C", "type": "grandstand", "amount": 489, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Ascari 4 (Sector 13)", "type": "grandstand", "amount": 786, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Prima Variante Esterna A (8A)", "type": "grandstand", "amount": 888, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Parabolica", "type": "grandstand", "amount": 888, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Alta Velocità C (6C)", "type": "grandstand", "amount": 1158, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Centrale", "type": "grandstand", "amount": 1614, "currency": "EUR", "days": "3-day"}
+      ],
+      "note": "Sprint weekend. 'From' price is 3-day lawn General Admission. Kids up to 11 get free lawn entry.",
+      "sources": [
+        "https://www.monzanet.it/en/tickets/",
+        "https://www.formula1.it/news/32710/1/aperte-le-prevendite-per-monza-2027-il-listino-prezzi-dei-biglietti"
+      ]
+    },
+    {
+      "season": 2027,
+      "circuitId": "madrid",
+      "grandPrixName": "Spanish Grand Prix",
+      "locality": "Madrid",
+      "countryFlag": "🇪🇸",
+      "round": 15,
+      "raceStart": "2027-09-10",
+      "raceEnd": "2027-09-12",
+      "ticketURL": "https://www.madring.com/en/tickets",
+      "soldOut": false,
+      "priceFrom": null,
+      "windows": [
+        {"kind": "presale", "title": "American Express presale", "start": "2026-09-21", "end": "2026-09-28"},
+        {"kind": "generalSale", "title": "General sale", "start": "2026-09-29", "end": null}
+      ],
+      "pricesAsOf": "2026-11-10",
+      "pricesNote": "First-release prices — each release costs more. General Admission price not published yet.",
+      "prices": [
+        {"ticket": "Bronze Grandstand", "type": "grandstand", "amount": 435, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Silver Grandstand", "type": "grandstand", "amount": 585, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Monumental 12B", "type": "grandstand", "amount": 585, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Gold Grandstand", "type": "grandstand", "amount": 989, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Recta 1C Gold (Covered)", "type": "grandstand", "amount": 1245, "currency": "EUR", "days": "3-day"}
+      ],
+      "note": "At Madring. 3-day tickets only — non-refundable and non-transferable. Prices rise in phases.",
+      "sources": [
+        "https://www.madring.com/en/press-releases/pre-sale-amex"
+      ]
+    },
+    {
+      "season": 2027,
+      "circuitId": "azerbaijan",
+      "grandPrixName": "Azerbaijan Grand Prix",
+      "locality": "Baku",
+      "countryFlag": "🇦🇿",
+      "round": 16,
+      "raceStart": "2027-09-24",
+      "raceEnd": "2027-09-26",
+      "ticketURL": "https://www.bakucitycircuit.com/buy-now",
+      "soldOut": false,
+      "priceFrom": null,
+      "windows": [
+        {"kind": "generalSale", "title": "2027 tickets on sale", "start": null, "end": null},
+        {"kind": "earlyBird", "title": "Early bird — 20% off", "start": null, "end": "2026-11-16"}
+      ],
+      "pricesAsOf": "2026-11-10",
+      "pricesNote": "Regular promoter prices incl. VAT, before the 20% early-bird discount (ends 16 Nov). Includes a Thursday pit lane walk.",
+      "prices": [
+        {"ticket": "Filarmoniya", "type": "grandstand", "amount": 490, "currency": "USD", "days": "4-day"},
+        {"ticket": "Khazar", "type": "grandstand", "amount": 510, "currency": "USD", "days": "4-day"},
+        {"ticket": "City", "type": "grandstand", "amount": 650, "currency": "USD", "days": "4-day"},
+        {"ticket": "Icheri Sheher", "type": "grandstand", "amount": 760, "currency": "USD", "days": "4-day"},
+        {"ticket": "Azneft", "type": "grandstand", "amount": 810, "currency": "USD", "days": "4-day"},
+        {"ticket": "Champions", "type": "grandstand", "amount": 980, "currency": "USD", "days": "4-day"},
+        {"ticket": "Absheron", "type": "grandstand", "amount": 1270, "currency": "USD", "days": "4-day"}
+      ],
+      "note": null,
+      "sources": [
+        "https://www.bakucitycircuit.com/buy-now"
+      ]
+    },
+    {
+      "season": 2027,
+      "circuitId": "turkey",
+      "grandPrixName": "Turkish Grand Prix",
+      "locality": "Istanbul",
+      "countryFlag": "🇹🇷",
+      "round": 17,
+      "raceStart": "2027-10-01",
+      "raceEnd": "2027-10-03",
+      "ticketURL": "https://turkishgp.tosfed.org.tr/en/",
+      "soldOut": false,
+      "priceFrom": null,
+      "windows": [
+        {"kind": "waitlist", "title": "Pre-registration", "start": null, "end": null}
+      ],
+      "note": "Istanbul Park returns for the first time since 2021. No on-sale date yet.",
+      "sources": [
+        "https://turkishgp.tosfed.org.tr/en/",
+        "https://ticketing.formula1.com/turkiye/"
+      ]
+    },
+    {
+      "season": 2027,
+      "circuitId": "singapore",
+      "grandPrixName": "Singapore Grand Prix",
+      "locality": "Singapore",
+      "countryFlag": "🇸🇬",
+      "round": 18,
+      "raceStart": "2027-10-08",
+      "raceEnd": "2027-10-10",
+      "ticketURL": "https://singaporegp.sg/en/tickets/",
+      "soldOut": false,
+      "priceFrom": {"amount": 598, "currency": "SGD"},
+      "windows": [
+        {"kind": "earlyBird", "title": "Super Early Bird", "start": "2026-10-08", "end": "2026-10-18", "soldOut": true},
+        {"kind": "earlyBird", "title": "Early Bird — up to 15% off", "start": "2026-10-19", "end": "2026-11-10", "soldOut": true},
+        {"kind": "generalSale", "title": "Regular sale", "start": "2026-11-11", "end": null}
+      ],
+      "pricesAsOf": "2026-11-10",
+      "pricesNote": "Official adult prices incl. GST. Paddock Club is sold out.",
+      "prices": [
+        {"ticket": "Zone 4 Walkabout", "type": "generalAdmission", "amount": 598, "currency": "SGD", "days": "3-day"},
+        {"ticket": "Stamford Grandstand", "type": "grandstand", "amount": 638, "currency": "SGD", "days": "3-day"},
+        {"ticket": "Padang Grandstand", "type": "grandstand", "amount": 768, "currency": "SGD", "days": "3-day"},
+        {"ticket": "Republic Grandstand", "type": "grandstand", "amount": 1038, "currency": "SGD", "days": "3-day"},
+        {"ticket": "Bayfront Grandstand", "type": "grandstand", "amount": 1488, "currency": "SGD", "days": "3-day"},
+        {"ticket": "Marina Bay Grandstand", "type": "grandstand", "amount": 1798, "currency": "SGD", "days": "3-day"},
+        {"ticket": "Turn 1 Grandstand", "type": "grandstand", "amount": 1798, "currency": "SGD", "days": "3-day"},
+        {"ticket": "Pit Grandstand", "type": "grandstand", "amount": 1888, "currency": "SGD", "days": "3-day"},
+        {"ticket": "Super Pit Grandstand", "type": "grandstand", "amount": 2608, "currency": "SGD", "days": "3-day"},
+        {"ticket": "Lounge Plus", "type": "hospitality", "amount": 6527, "currency": "SGD", "days": "3-day"}
+      ],
+      "note": "Raffles, Republic and Connaught grandstands, Paddock Club and Sky Suite are sold out. 'From' price is a Zone 4 Walkabout 3-day pass.",
+      "sources": [
+        "https://singaporegp.sg/en/tickets/"
+      ]
+    },
+    {
+      "season": 2027,
+      "circuitId": "united-states",
+      "grandPrixName": "United States Grand Prix",
+      "locality": "Austin",
+      "countryFlag": "🇺🇸",
+      "round": 19,
+      "raceStart": "2027-10-22",
+      "raceEnd": "2027-10-24",
+      "ticketURL": "https://circuitoftheamericas.com/event/f1/tickets/",
+      "soldOut": false,
+      "priceFrom": {"amount": 450, "currency": "USD"},
+      "windows": [
+        {"kind": "generalSale", "title": "3-Day Grounds Passes", "start": null, "end": null},
+        {"kind": "presale", "title": "Grandstand deposits", "start": null, "end": null}
+      ],
+      "pricesAsOf": "2026-11-10",
+      "pricesNote": "Only Grounds Passes are on sale; grandstand prices aren't published yet. Price includes fees.",
+      "prices": [
+        {"ticket": "General Admission (Grounds Pass)", "type": "generalAdmission", "amount": 450, "currency": "USD", "days": "3-day"}
+      ],
+      "note": "Only Grounds Passes are on sale. Grandstand on-sale date not announced yet. 'From' price includes fees.",
+      "sources": [
+        "https://circuitoftheamericas.com/ticket/f1-general-admission/",
+        "https://circuitoftheamericas.com/ticket/2027-deposits/"
+      ]
+    },
+    {
+      "season": 2027,
+      "circuitId": "mexico",
+      "grandPrixName": "Mexico City Grand Prix",
+      "locality": "Mexico City",
+      "countryFlag": "🇲🇽",
+      "round": 20,
+      "raceStart": "2027-10-29",
+      "raceEnd": "2027-10-31",
+      "ticketURL": "https://www.mexicogp.mx/boletos-generales/",
+      "soldOut": false,
+      "priceFrom": {"amount": 5580, "currency": "MXN"},
+      "windows": [
+        {"kind": "presale", "title": "Renewal presale", "start": "2026-11-05", "end": "2026-11-06"},
+        {"kind": "presale", "title": "Banamex / Banorte presale", "start": "2026-11-09", "end": "2026-11-10"},
+        {"kind": "generalSale", "title": "General sale (Ticketmaster)", "start": "2026-11-11", "end": null}
+      ],
+      "pricesAsOf": "2026-11-03",
+      "pricesNote": "Official price table incl. Ticketmaster fees. Weekend passes only.",
+      "prices": [
+        {"ticket": "Grada 2A (Zona Naranja)", "type": "grandstand", "amount": 5580, "currency": "MXN", "days": "3-day"},
+        {"ticket": "Grada 6A (Zona Azul)", "type": "grandstand", "amount": 9920, "currency": "MXN", "days": "3-day"},
+        {"ticket": "Grada 14 (Foro Sol Sur)", "type": "grandstand", "amount": 14500, "currency": "MXN", "days": "3-day"},
+        {"ticket": "Grada 15 (Foro Sol Norte)", "type": "grandstand", "amount": 14500, "currency": "MXN", "days": "3-day"},
+        {"ticket": "Grada 5 (Zona Azul)", "type": "grandstand", "amount": 19000, "currency": "MXN", "days": "3-day"},
+        {"ticket": "Grada 11 (Zona Amarilla)", "type": "grandstand", "amount": 21715, "currency": "MXN", "days": "3-day"},
+        {"ticket": "Grada 1 (Zona Verde)", "type": "grandstand", "amount": 34500, "currency": "MXN", "days": "3-day"},
+        {"ticket": "Box Oro Norte", "type": "hospitality", "amount": 50485, "currency": "MXN", "days": "3-day"}
+      ],
+      "note": "3-day tickets only; prices include service fees.",
+      "sources": [
+        "https://www.mexicogp.mx/boletos-generales/"
+      ]
+    },
+    {
+      "season": 2027,
+      "circuitId": "brazil",
+      "grandPrixName": "São Paulo Grand Prix",
+      "locality": "São Paulo",
+      "countryFlag": "🇧🇷",
+      "round": 21,
+      "raceStart": "2027-11-05",
+      "raceEnd": "2027-11-07",
+      "ticketURL": "https://www.eventim.com.br/f1saopaulo",
+      "soldOut": false,
+      "priceFrom": null,
+      "windows": [
+        {"kind": "presale", "title": "Porto Bank cardholder presale", "start": "2026-11-09", "end": "2026-11-15"},
+        {"kind": "presale", "title": "American Express presale", "start": "2026-11-12", "end": "2026-11-15"},
+        {"kind": "generalSale", "title": "General sale (Eventim)", "start": "2026-11-16", "end": null}
+      ],
+      "pricesAsOf": "2026-11-09",
+      "pricesNote": "Official full prices, sold in batches that can rise. Half-price (meia-entrada) available for Setor G, A, R and M.",
+      "prices": [
+        {"ticket": "Setor G", "type": "grandstand", "amount": 1090, "currency": "BRL", "days": "3-day"},
+        {"ticket": "Setor A", "type": "grandstand", "amount": 1780, "currency": "BRL", "days": "3-day"},
+        {"ticket": "Setor R", "type": "grandstand", "amount": 2450, "currency": "BRL", "days": "3-day"},
+        {"ticket": "Setor M", "type": "grandstand", "amount": 3950, "currency": "BRL", "days": "3-day"},
+        {"ticket": "Arquibancada Bortoleto", "type": "grandstand", "amount": 3950, "currency": "BRL", "days": "3-day"},
+        {"ticket": "Setor D", "type": "grandstand", "amount": 5150, "currency": "BRL", "days": "3-day"},
+        {"ticket": "Setor B", "type": "grandstand", "amount": 5940, "currency": "BRL", "days": "3-day"},
+        {"ticket": "Orange Tree Club", "type": "hospitality", "amount": 9100, "currency": "BRL", "days": "3-day"},
+        {"ticket": "Grand Prix Club", "type": "hospitality", "amount": 22600, "currency": "BRL", "days": "3-day"}
+      ],
+      "note": "Sprint weekend. Half-price (meia-entrada) tickets available for eligible fans.",
+      "sources": [
+        "https://tmc.com.br/esporte/ingressos-gp-sao-paulo/",
+        "https://exame.com/esporte/gp-de-sao-paulo-2027-quanto-custam-os-ingressos-da-formula-1-no-brasil/"
+      ]
+    },
+    {
+      "season": 2027,
+      "circuitId": "las-vegas",
+      "grandPrixName": "Las Vegas Grand Prix",
+      "locality": "Las Vegas",
+      "countryFlag": "🇺🇸",
+      "round": 22,
+      "raceStart": "2027-11-18",
+      "raceEnd": "2027-11-20",
+      "ticketURL": "https://ticketing.formula1.com/las-vegas/",
+      "soldOut": false,
+      "priceFrom": null,
+      "windows": [
+        {"kind": "waitlist", "title": "Waitlist for presale access", "start": null, "end": null}
+      ],
+      "note": "Thursday–Saturday weekend with a Saturday-night race. 2026 tickets went on sale in early May.",
+      "sources": [
+        "https://ticketing.formula1.com/las-vegas/"
+      ]
+    },
+    {
+      "season": 2027,
+      "circuitId": "qatar",
+      "grandPrixName": "Qatar Grand Prix",
+      "locality": "Lusail",
+      "countryFlag": "🇶🇦",
+      "round": 23,
+      "raceStart": "2027-12-03",
+      "raceEnd": "2027-12-05",
+      "ticketURL": "https://ticketing.formula1.com/qatar/",
+      "soldOut": false,
+      "priceFrom": null,
+      "windows": [
+        {"kind": "waitlist", "title": "Waitlist", "start": null, "end": null}
+      ],
+      "note": "Sprint weekend. No on-sale date yet.",
+      "sources": [
+        "https://ticketing.formula1.com/qatar/",
+        "https://tickets.lcsc.qa"
+      ]
+    },
+    {
+      "season": 2027,
+      "circuitId": "abu-dhabi",
+      "grandPrixName": "Abu Dhabi Grand Prix",
+      "locality": "Abu Dhabi",
+      "countryFlag": "🇦🇪",
+      "round": 24,
+      "raceStart": "2027-12-10",
+      "raceEnd": "2027-12-12",
+      "ticketURL": "https://ticketing.formula1.com/abu-dhabi/",
+      "soldOut": false,
+      "priceFrom": null,
+      "windows": [
+        {"kind": "waitlist", "title": "Waitlist for presale access", "start": null, "end": null}
+      ],
+      "note": "Season finale and Sprint weekend. Past seasons have opened with early-bird discounts.",
+      "sources": [
+        "https://ticketing.formula1.com/abu-dhabi/",
+        "https://www.yasmarinacircuit.com/en/formula1"
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "circuitId": "bahrain",
+      "picks": [
+        {"goal": "budget", "ticket": "University Grandstand", "type": "grandstand", "why": "There's no general admission here. University is one of the cheapest seats and watches the Turn 4 DRS pass."},
+        {"goal": "firstTimer", "ticket": "Main Grandstand", "type": "grandstand", "why": "Covered seats facing the grid, start and podium, right beside the main fan zone and parking."},
+        {"goal": "bestView", "ticket": "Turn 1 Grandstand", "type": "grandstand", "why": "Outside the heavy Turn 1 braking zone, Bahrain's main overtaking spot."},
+        {"goal": "premium", "ticket": "F1 Paddock Club", "type": "paddockClub", "why": "All-inclusive suites above the team garages, with pit lane walks."}
+      ],
+      "sources": [
+        "https://www.bahrain.gp/en/map-of-the-grandstands-24",
+        "https://oversteer48.com/best-seats-bahrain-gp-grandstand-guide/",
+        "https://www.thef1spectator.com/bahrain-f1-travel-guide/where-to-watch/"
+      ]
+    },
+    {
+      "circuitId": "saudi-arabia",
+      "picks": [
+        {"goal": "budget", "ticket": "General Admission", "type": "generalAdmission", "why": "One of F1's cheapest passes, with fan zones and concerts. Trackside views are low and fenced."},
+        {"goal": "firstTimer", "ticket": "Grandstand Central C", "type": "grandstand", "why": "Covered and cheaper than Main, with cars passing twice — out of Turn 8 and back through Turns 17–18."},
+        {"goal": "bestView", "ticket": "Grandstand Main B", "type": "grandstand", "why": "Covered seats at Turns 1–2, the end of the longest DRS zone and Jeddah's prime overtaking spot."},
+        {"goal": "premium", "ticket": "F1 Paddock Club", "type": "paddockClub", "why": "Hospitality above the pits, with pit lane walks and driver appearances."}
+      ],
+      "sources": [
+        "https://www.saudi.gp/en/map-of-the-grandstands-26",
+        "https://gpdestinations.com/saudi-arabian-grand-prix-tickets/",
+        "https://www.thef1spectator.com/saudi-arabia-grand-prix/grandstands/"
+      ]
+    },
+    {
+      "circuitId": "australia",
+      "picks": [
+        {"goal": "budget", "ticket": "Park Pass", "type": "generalAdmission", "why": "Some of F1's best GA: grassy mounds and raised platforms, including at Turns 1–2."},
+        {"goal": "firstTimer", "ticket": "Fangio Grandstand", "type": "grandstand", "why": "On the start-finish straight facing the grid, a short walk from the podium."},
+        {"goal": "bestView", "ticket": "Jones Grandstand", "type": "grandstand", "why": "Outside Turn 1 at the apex, for the start and most of the race's passing."},
+        {"goal": "atmosphere", "ticket": "Park Pass", "type": "generalAdmission", "why": "Roam the entertainment stages, fan activations and the Turn 1 hill all weekend."},
+        {"goal": "family", "ticket": "Waite Grandstand", "type": "grandstand", "why": "Next to the Kids Area and food; kids 3–14 get about 20% off grandstand seats."},
+        {"goal": "premium", "ticket": "F1 Paddock Club", "type": "paddockClub", "why": "Top-tier hospitality above the pit lane, with paddock access."}
+      ],
+      "sources": [
+        "https://www.grandprix.com.au/en/news/4580462/which-ticket-is-right-for-you",
+        "https://gpdestinations.com/tickets-australian-f1-grand-prix/",
+        "https://www.thef1spectator.com/australian-f1-travel-guide/where-to-watch/"
+      ]
+    },
+    {
+      "circuitId": "japan",
+      "picks": [
+        {"goal": "budget", "ticket": "West Area Ticket", "type": "generalAdmission", "why": "Grass banks and unreserved terraces at Spoon Curve and 130R, Suzuka's fastest corners."},
+        {"goal": "firstTimer", "ticket": "Grandstand B2", "type": "grandstand", "why": "Popular Turn 1 stand for the start and plenty of passing."},
+        {"goal": "bestView", "ticket": "Grandstand Q2", "type": "grandstand", "why": "High seats above the final chicane, the last-lap overtaking spot, with a wide panorama."},
+        {"goal": "family", "ticket": "S Seat (Family Seat)", "type": "grandstand", "why": "Family-only area with stroller parking, changing rooms and cheap child tickets."},
+        {"goal": "premium", "ticket": "F1 Paddock Club", "type": "paddockClub", "why": "Suites above the Suzuka pits with views of the grid, pit stops and podium."}
+      ],
+      "sources": [
+        "https://www.suzukacircuit.jp/eng/f1/ticket/index.html",
+        "https://www.suzukacircuit.jp/eng/f1/ticket/family-seat.html",
+        "https://gpdestinations.com/tickets-japanese-grand-prix/"
+      ]
+    },
+    {
+      "circuitId": "china",
+      "picks": [
+        {"goal": "budget", "ticket": "General Admission Zone J", "type": "generalAdmission", "why": "F1's cheapest ticket, on the grass outside the Turn 14 hairpin where most overtakes happen."},
+        {"goal": "firstTimer", "ticket": "Grandstand K", "type": "grandstand", "why": "Affordable, partly covered hairpin stand, close to the fan zone."},
+        {"goal": "bestView", "ticket": "Grandstand H", "type": "grandstand", "why": "Where the long back straight ends in a heavy stop for Turn 14, with several big screens."},
+        {"goal": "premium", "ticket": "F1 Paddock Club", "type": "paddockClub", "why": "Hospitality above the pits — among the season's lowest Paddock Club prices."}
+      ],
+      "sources": [
+        "https://gpdestinations.com/tickets-chinese-f1-grand-prix/",
+        "https://www.fanamp.com/tr/chinese-grand-prix-seating-guide"
+      ]
+    },
+    {
+      "circuitId": "miami",
+      "picks": [
+        {"goal": "budget", "ticket": "Campus Pass", "type": "generalAdmission", "why": "Cheapest entry: roam the campus zones and Hard Rock Stadium seats. Trackside views are limited."},
+        {"goal": "firstTimer", "ticket": "Turn 1 North Grandstand", "type": "grandstand", "why": "Sweeping view of the start and Turns 1–3; upper rows are covered."},
+        {"goal": "bestView", "ticket": "Turn 18 Grandstand", "type": "grandstand", "why": "Covers Turns 17–19 at the end of the back straight, Miami's main late-braking pass."},
+        {"goal": "atmosphere", "ticket": "Beach Grandstands", "type": "grandstand", "why": "Turns 11–12 beside The Beach, with trackside performances all weekend."},
+        {"goal": "premium", "ticket": "F1 Paddock Club", "type": "paddockClub", "why": "Open bar and a terrace above the team garages."}
+      ],
+      "sources": [
+        "https://f1miamigp.com/tickets/grandstand/",
+        "https://oversteer48.com/miami-grand-prix-tickets-guides/",
+        "https://gpdestinations.com/budget-planner-miami-grand-prix/"
+      ]
+    },
+    {
+      "circuitId": "canada",
+      "picks": [
+        {"goal": "budget", "ticket": "General Admission", "type": "generalAdmission", "why": "Cheapest way in. The best GA spot is by the hairpin — arrive early."},
+        {"goal": "firstTimer", "ticket": "Grandstand 11", "type": "grandstand", "why": "Faces the Senna Corner and pit exit with a big screen; often called Montreal's best seat."},
+        {"goal": "bestView", "ticket": "Grandstand 15", "type": "grandstand", "why": "Tall stand facing the hairpin's entry and exit, a prime overtaking spot."},
+        {"goal": "atmosphere", "ticket": "Grandstand 12", "type": "grandstand", "why": "The Senna Corner stands are where the party is, plus the uphill run to Turn 3."},
+        {"goal": "family", "ticket": "Grandstand 33 (Family Grandstand)", "type": "grandstand", "why": "Dedicated family stand at Turns 6–7; kids 11 and under get a discount with an adult."},
+        {"goal": "premium", "ticket": "F1 Paddock Club", "type": "paddockClub", "why": "Hospitality above the team garages, with paddock access and the start below."}
+      ],
+      "sources": [
+        "https://www.canada.gp/en/map-of-the-grandstands-25",
+        "https://gpcanada.ca/en/tickets/general-admission/",
+        "https://oversteer48.com/canadian-grand-prix-tickets-guides-f1-montreal/"
+      ]
+    },
+    {
+      "circuitId": "monaco",
+      "picks": [
+        {"goal": "budget", "ticket": "Secteur Rocher", "type": "generalAdmission", "why": "Hillside general admission above the final corners, with harbour views."},
+        {"goal": "firstTimer", "ticket": "Grandstand K", "type": "grandstand", "why": "Monaco's biggest stand, over the harbour from Tabac to the Piscine, with a big screen."},
+        {"goal": "bestView", "ticket": "Grandstand A", "type": "grandstand", "why": "At Sainte-Dévote (Turn 1), home of first-lap late braking. No big screen."},
+        {"goal": "premium", "ticket": "F1 Paddock Club", "type": "paddockClub", "why": "The ultimate Monaco hospitality, above the pit lane."}
+      ],
+      "sources": [
+        "https://www.senategrandprix.com/Grandstand-Guide",
+        "https://www.thef1spectator.com/monaco-grand-prix-travel-guide/where-to-watch/",
+        "https://www.f1monaco.com/fr/plan-des-tribunes-24"
+      ]
+    },
+    {
+      "circuitId": "portugal",
+      "picks": [
+        {"goal": "budget", "ticket": "General Admission", "type": "generalAdmission", "why": "Raised natural hillsides between Turns 11 and 14, with big screens and the fan zones."},
+        {"goal": "firstTimer", "ticket": "Grandstand Main – Upper Level", "type": "grandstand", "why": "The only covered stand, facing the grid and pits, with most of the lap visible from the top."},
+        {"goal": "bestView", "ticket": "Grandstand Meo", "type": "grandstand", "why": "Outside Turn 1, the heaviest braking point — first-lap scrambles and late-braking passes."},
+        {"goal": "premium", "ticket": "Champions Club", "type": "hospitality", "why": "All-inclusive hospitality with track views and behind-the-scenes paddock access."}
+      ],
+      "sources": [
+        "https://www.portugal.gp/en/",
+        "https://gpdestinations.com/tickets-portuguese-f1-grand-prix/"
+      ]
+    },
+    {
+      "circuitId": "great-britain",
+      "picks": [
+        {"goal": "budget", "ticket": "General Admission", "type": "generalAdmission", "why": "Head for Vale — a raised bank looking from Stowe's exit towards Club."},
+        {"goal": "firstTimer", "ticket": "Club Corner", "type": "grandstand", "why": "Covered and near the podium, with views of Stowe, Vale, Club and down the start straight."},
+        {"goal": "bestView", "ticket": "Stowe", "type": "grandstand", "why": "Heavy braking at the end of the Hangar Straight — Silverstone's best overtaking spot."},
+        {"goal": "atmosphere", "ticket": "Village", "type": "grandstand", "why": "One of Silverstone's own picks for overtaking and crowd atmosphere."},
+        {"goal": "family", "ticket": "Copse", "type": "grandstand", "why": "Covered stand where kids 11 and under get 25% off, with fast cars through Copse."},
+        {"goal": "premium", "ticket": "F1 Paddock Club", "type": "paddockClub", "why": "Suites above the pits with fine dining and pit lane walks."}
+      ],
+      "sources": [
+        "https://www.silverstone.co.uk/news/silverstone-grandstands-faqs",
+        "https://www.thef1spectator.com/british-grand-prix-travel-guide/general-admission/",
+        "https://oversteer48.com/british-gp-silverstone-tickets/"
+      ]
+    },
+    {
+      "circuitId": "austria",
+      "picks": [
+        {"goal": "budget", "ticket": "General Admission", "type": "generalAdmission", "why": "Hillside views across the circuit, plenty of big screens and the fan zones."},
+        {"goal": "firstTimer", "ticket": "Steiermark", "type": "grandstand", "why": "Outside Turn 1 looking down the start straight, with a big screen and the Fan Village nearby."},
+        {"goal": "bestView", "ticket": "T3", "type": "grandstand", "why": "Faces the Turn 3 hairpin, the Red Bull Ring's main heavy-braking overtaking spot."},
+        {"goal": "atmosphere", "ticket": "Red Bull", "type": "grandstand", "why": "The biggest stand, from Turn 1 up to Turn 3, with a dedicated Verstappen fan section."},
+        {"goal": "family", "ticket": "General Admission", "type": "generalAdmission", "why": "Kids 14 and under go free with a ticketed adult if booked ahead; two family-friendly fan zones."},
+        {"goal": "premium", "ticket": "F1 Paddock Club", "type": "paddockClub", "why": "Air-conditioned suite above the pits with a roof terrace over the grid."}
+      ],
+      "sources": [
+        "https://www.redbullring.com/en/events-tickets/formula-1/glossary/",
+        "https://ticketing.formula1.com/tickets/en/austria/general-admission-f1-red-bull-ring",
+        "https://gpdestinations.com/austrian-grand-prix-red-bull-ring-tickets/"
+      ]
+    },
+    {
+      "circuitId": "belgium",
+      "picks": [
+        {"goal": "budget", "ticket": "Bronze", "type": "generalAdmission", "why": "Roam the whole Ardennes lap — the grassy bank at Pouhon is the best free spot."},
+        {"goal": "firstTimer", "ticket": "Gold 1 Pit", "type": "grandstand", "why": "Covered, facing the pits and grid: the start, the podium and braking into La Source."},
+        {"goal": "bestView", "ticket": "Gold 3 Eau-Rouge", "type": "grandstand", "why": "Top of Raidillon, watching cars flat out through Eau Rouge, F1's most famous corner."},
+        {"goal": "atmosphere", "ticket": "Fanzone Grandstand", "type": "grandstand", "why": "At the foot of Raidillon, right in the hub of fan activities."},
+        {"goal": "family", "ticket": "Combes", "type": "grandstand", "why": "The promoter's family pick: reserved seats, with discounted children's tickets."},
+        {"goal": "premium", "ticket": "Champions Club Eau-Rouge", "type": "hospitality", "why": "All-inclusive hospitality looking straight onto Eau Rouge and Raidillon."}
+      ],
+      "sources": [
+        "https://www.spagrandprix.com/en/news/16_where-to-sit-at-the-belgian-grand-prix",
+        "https://www.spagrandprix.com/en/ticketing-map-spa-francorchamps",
+        "https://gpdestinations.com/tickets-belgian-grand-prix-spa-francorchamps/"
+      ]
+    },
+    {
+      "circuitId": "hungary",
+      "picks": [
+        {"goal": "budget", "ticket": "General Admission", "type": "generalAdmission", "why": "Grass banks around Turns 9–14 overlook the natural bowl; roam all weekend."},
+        {"goal": "firstTimer", "ticket": "Apex 1", "type": "grandstand", "why": "Above the final corner looking down the main straight, a short walk from the fan zone."},
+        {"goal": "bestView", "ticket": "T1", "type": "grandstand", "why": "Overlooks Turn 1, the Hungaroring's best — almost only — real overtaking spot."},
+        {"goal": "atmosphere", "ticket": "Fan Grandstand", "type": "grandstand", "why": "Between Turns 11 and 12, with the fan zone stage right behind it."},
+        {"goal": "family", "ticket": "Hungaroring", "type": "grandstand", "why": "The only fully covered stand — shade in Budapest's summer heat, facing the pits and start."},
+        {"goal": "premium", "ticket": "F1 Paddock Club", "type": "paddockClub", "why": "Above the pits with seated dining and daily pit lane walks."}
+      ],
+      "sources": [
+        "https://gpdestinations.com/tickets-hungarian-f1-grand-prix/",
+        "https://www.sitwhere.com/hungarian-f1-grand-prix"
+      ]
+    },
+    {
+      "circuitId": "italy",
+      "picks": [
+        {"goal": "budget", "ticket": "General Admission", "type": "generalAdmission", "why": "Roam Lesmo, Ascari and Parabolica, then join Monza's famous podium track invasion."},
+        {"goal": "firstTimer", "ticket": "Ascari 4 (Sector 13)", "type": "grandstand", "why": "Sees the Ascari chicane and the run to Parabolica, with a big screen opposite."},
+        {"goal": "bestView", "ticket": "Prima Variante Esterna A (8A)", "type": "grandstand", "why": "Closest to the Turn 1 apex — Monza's hardest braking zone and main overtaking spot."},
+        {"goal": "atmosphere", "ticket": "Centrale", "type": "grandstand", "why": "The historic stand opposite the grid, packed with tifosi and facing the podium invasion."},
+        {"goal": "family", "ticket": "General Admission", "type": "generalAdmission", "why": "Kids 11 and under get into the lawn areas free with an adult."},
+        {"goal": "premium", "ticket": "F1 Paddock Club", "type": "paddockClub", "why": "Hospitality above the pits at the Temple of Speed, with pit lane access."}
+      ],
+      "sources": [
+        "https://www.monzanet.it/en/tickets/",
+        "https://www.thef1spectator.com/italian-grand-prix-travel-guide/where-to-watch/"
+      ]
+    },
+    {
+      "circuitId": "madrid",
+      "picks": [
+        {"goal": "budget", "ticket": "General Admission", "type": "generalAdmission", "why": "Cheapest way in, with standing zones on the main straight, the fast section and the chicane."},
+        {"goal": "firstTimer", "ticket": "Gold Grandstand", "type": "grandstand", "why": "On the main straight with the start, pit lane and podium, giant screens and part-covered seats."},
+        {"goal": "bestView", "ticket": "Monumental 12B", "type": "grandstand", "why": "Watch cars on La Monumental, F1's longest and steepest banked corner."},
+        {"goal": "premium", "ticket": "F1 Paddock Club", "type": "paddockClub", "why": "Above the pit garages — the top-tier way to see Madrid's new race."}
+      ],
+      "sources": [
+        "https://www.madring.com/en/tickets",
+        "https://ticketsf1.madring.com/en/",
+        "https://gpdestinations.com/how-to-buy-f1-tickets-for-spanish-grand-prix-madrid/"
+      ]
+    },
+    {
+      "circuitId": "azerbaijan",
+      "picks": [
+        {"goal": "budget", "ticket": "Khazar", "type": "grandstand", "why": "Best of the affordable stands — two straights with cars racing in opposite directions."},
+        {"goal": "firstTimer", "ticket": "Azneft", "type": "grandstand", "why": "Clear views of the Turn 16 exit, right in front of the Fanzone."},
+        {"goal": "bestView", "ticket": "Absheron", "type": "grandstand", "why": "Main stand: Section E faces the Turn 1 braking zone, Section C the start and pits."},
+        {"goal": "atmosphere", "ticket": "Icheri Sheher", "type": "grandstand", "why": "Inside the Old City, where cars squeeze past castle walls on a 7.6 m-wide track."},
+        {"goal": "family", "ticket": "Marina", "type": "grandstand", "why": "Affordable, with the Fanzone right behind; kids 2–16 get about 30% off."},
+        {"goal": "premium", "ticket": "F1 Paddock Club", "type": "paddockClub", "why": "Above the pits on the start/finish straight, with daily pit lane walks."}
+      ],
+      "sources": [
+        "https://gpdestinations.com/f1-tickets-azerbaijan-grand-prix-in-baku/",
+        "https://www.thef1spectator.com/azerbaijan-grand-prix/where-to-watch/"
+      ]
+    },
+    {
+      "circuitId": "turkey",
+      "picks": [
+        {"goal": "budget", "ticket": "General Admission", "type": "generalAdmission", "why": "Cheapest way in — Istanbul Park's hilly layout gives decent views from the GA banks."},
+        {"goal": "premium", "ticket": "F1 Paddock Club", "type": "paddockClub", "why": "F1's top hospitality, with lounges above the team garages on the main straight."}
+      ],
+      "sources": [
+        "https://ticketing.formula1.com/turkiye/"
+      ]
+    },
+    {
+      "circuitId": "singapore",
+      "picks": [
+        {"goal": "budget", "ticket": "Zone 4 Walkabout", "type": "generalAdmission", "why": "Cheapest ticket — still includes the Padang Stage concerts and Zone 4 viewing spots."},
+        {"goal": "firstTimer", "ticket": "Marina Bay Grandstand", "type": "grandstand", "why": "Overlooks the final corners with the skyline and Singapore Flyer behind."},
+        {"goal": "bestView", "ticket": "Turn 1 Grandstand", "type": "grandstand", "why": "Cars brake hard from about 290 km/h — and the ticket covers all four zones."},
+        {"goal": "atmosphere", "ticket": "Padang Grandstand", "type": "grandstand", "why": "Next to the Padang Stage headline concerts, facing the Turn 10 'Singapore Sling'."},
+        {"goal": "family", "ticket": "Stamford Grandstand", "type": "grandstand", "why": "Juniors get up to 50% off 3-day seats, near the Empress Lawn family zone."},
+        {"goal": "premium", "ticket": "F1 Paddock Club", "type": "paddockClub", "why": "Chef-led dining and an open bar above the pit lane, with access to every zone."}
+      ],
+      "sources": [
+        "https://www.singaporegp.sg",
+        "https://gpdestinations.com/tickets-singapore-f1-grand-prix/"
+      ]
+    },
+    {
+      "circuitId": "united-states",
+      "picks": [
+        {"goal": "budget", "ticket": "General Admission (Grounds Pass)", "type": "generalAdmission", "why": "COTA's hills make great GA — the Turn 1 hillside looks down on the braking zone."},
+        {"goal": "firstTimer", "ticket": "Turn 15 Grandstand", "type": "grandstand", "why": "Covers the stadium section and back straight; pick an upper row in sections 2–7."},
+        {"goal": "bestView", "ticket": "Turn 1 Grandstand", "type": "grandstand", "why": "High above the uphill Turn 1 hairpin — the best seat for the start and first lap."},
+        {"goal": "premium", "ticket": "F1 Paddock Club", "type": "paddockClub", "why": "Two levels of hospitality directly above the pit garages."}
+      ],
+      "sources": [
+        "https://gpdestinations.com/tickets-us-grand-prix-cota/",
+        "https://help.thecircuit.com/hc/en-us/articles/40009157954324-Grandstand-Seating"
+      ]
+    },
+    {
+      "circuitId": "mexico",
+      "picks": [
+        {"goal": "budget", "ticket": "Grada 2A (Zona Naranja)", "type": "grandstand", "why": "The cheapest seat at the circuit, overlooking the long main straight."},
+        {"goal": "firstTimer", "ticket": "Grada 15 (Foro Sol Norte)", "type": "grandstand", "why": "In the stadium, facing the podium, with a giant screen and cars coming towards you."},
+        {"goal": "bestView", "ticket": "Grada 5 (Zona Azul)", "type": "grandstand", "why": "Wide view of the first three corners, where most passes happen."},
+        {"goal": "atmosphere", "ticket": "Grada 14 (Foro Sol Sur)", "type": "grandstand", "why": "The Foro Sol stadium — the loudest crowd on the calendar, with the podium and DJ sets."},
+        {"goal": "premium", "ticket": "F1 Paddock Club", "type": "paddockClub", "why": "Pick the Foro Sol level for the stadium buzz, or above the pits for the grid."}
+      ],
+      "sources": [
+        "https://www.mexicogp.mx/informacion/accesos/",
+        "https://gpdestinations.com/tickets-mexico-grand-prix/"
+      ]
+    },
+    {
+      "circuitId": "brazil",
+      "picks": [
+        {"goal": "budget", "ticket": "Setor G", "type": "grandstand", "why": "Cheapest sector, on the back-straight overtaking spot and closest to the station."},
+        {"goal": "firstTimer", "ticket": "Setor M", "type": "grandstand", "why": "Covered, numbered seats facing the garages, with indoor toilets and a food court."},
+        {"goal": "bestView", "ticket": "Setor D", "type": "grandstand", "why": "Covered stand outside the Senna S, where most opening-lap passes happen."},
+        {"goal": "premium", "ticket": "F1 Paddock Club", "type": "paddockClub", "why": "Gourmet hospitality above the pit lane, with driver appearances."}
+      ],
+      "sources": [
+        "https://gpdestinations.com/tickets-brazilian-grand-prix-interlagos/",
+        "https://www.sitwhere.com/brazil-formula-1-grand-prix-interlagos"
+      ]
+    },
+    {
+      "circuitId": "las-vegas",
+      "picks": [
+        {"goal": "budget", "ticket": "Flamingo Zone GA", "type": "generalAdmission", "why": "Cheapest way in, with views of the flat-out Koval straight."},
+        {"goal": "firstTimer", "ticket": "West Harmon Grandstand", "type": "grandstand", "why": "Best-value reserved seat at Turn 17, now linked to the Koval and East Harmon zones."},
+        {"goal": "bestView", "ticket": "T-Mobile Zone at Sphere Grandstand", "type": "grandstand", "why": "Faces Turn 5 and the Turns 7–9 chicane, with the Sphere lit up behind."},
+        {"goal": "atmosphere", "ticket": "T-Mobile Zone at Sphere GA", "type": "generalAdmission", "why": "The busiest zone, with the T-Mobile Stage and the Sphere as a backdrop."},
+        {"goal": "premium", "ticket": "F1 Paddock Club", "type": "paddockClub", "why": "Suites above the pit building at the start/finish line, all-inclusive."}
+      ],
+      "sources": [
+        "https://www.f1lasvegasgp.com/tickets/general-admission/",
+        "https://www.f1lasvegasgp.com/tickets/hospitality/"
+      ]
+    },
+    {
+      "circuitId": "qatar",
+      "picks": [
+        {"goal": "budget", "ticket": "Lusail Hill GA", "type": "generalAdmission", "why": "A raised bank above Turn 1, the main overtaking spot. Fan Village and concert included."},
+        {"goal": "firstTimer", "ticket": "Main Grandstand", "type": "grandstand", "why": "Numbered seats with some cover, facing the grid, pit lane and podium."},
+        {"goal": "bestView", "ticket": "North Grandstand", "type": "grandstand", "why": "Between the grid and Turn 1, opposite the pit exit — great for the start."},
+        {"goal": "atmosphere", "ticket": "Lusail Hill GA", "type": "generalAdmission", "why": "Lively standing crowd above Turn 1, next to the Fan Village and post-race concert."},
+        {"goal": "premium", "ticket": "F1 Paddock Club", "type": "paddockClub", "why": "A balcony above the garages, with gourmet food, an open bar and a track tour."}
+      ],
+      "sources": [
+        "https://www.lcsc.qa/formula-1r-qatar-airways-qatar-grand-prix-2026",
+        "https://www.thef1spectator.com/qatar-grand-prix/where-to-watch/"
+      ]
+    },
+    {
+      "circuitId": "abu-dhabi",
+      "picks": [
+        {"goal": "budget", "ticket": "Abu Dhabi Hill", "type": "generalAdmission", "why": "Cheapest ticket, overlooking Turns 2–6, with the Yasalam concerts included."},
+        {"goal": "firstTimer", "ticket": "North Grandstand", "type": "grandstand", "why": "Mid-priced reserved seat facing an overtaking spot, with the North Oasis shade nearby."},
+        {"goal": "bestView", "ticket": "West Grandstand", "type": "grandstand", "why": "Faces the heavy braking zone after the 300 km/h back straight, the main passing spot."},
+        {"goal": "atmosphere", "ticket": "Abu Dhabi Hill", "type": "generalAdmission", "why": "A relaxed crowd on the grass, with the Abu Dhabi Hill Oasis fan area nearby."},
+        {"goal": "family", "ticket": "Any 4-day ticket", "type": "grandstand", "why": "Kids Go Free: up to four children aged 3–12 get free Friday fan-zone entry."},
+        {"goal": "premium", "ticket": "F1 Paddock Club", "type": "paddockClub", "why": "Above the pit lane, with daily pit lane walks and an all-day open bar."}
+      ],
+      "sources": [
+        "https://www.abudhabigp.com/en/ticket-inclusions",
+        "https://www.gptraveller.co.uk/which-is-the-best-grandstand-at-the-abu-dhabi-grand-prix.html",
+        "https://whatson.ae/2026/08/kids-go-free-on-friday-at-abu-dhabi-grand-prix-2026/"
+      ]
+    }
+  ]
+}
