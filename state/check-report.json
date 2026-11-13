@@ -18,10 +18,8 @@
   },
   "2026-qatar": {
     "checked": "2026-11-13",
-    "ok": 1,
-    "problems": {
-      "https://tickets.lcsc.qa": "no readable ticket text"
-    },
+    "ok": 2,
+    "problems": {},
     "speed": "hourly",
     "total": 2
   },
