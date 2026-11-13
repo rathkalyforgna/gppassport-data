@@ -61,7 +61,7 @@ jobs:
                Add the page's URL to the entry's "sources" if it isn't there.
             5. Keep the existing formatting style (small objects such as windows and prices on one line).
 
-            If you changed anything, set the top-level "updated" to today.
+            Leave the top-level "updated" alone — the workflow stamps the exact time after you finish.
             Then run `python3 scripts/validate.py tickets.json` and fix any problem it reports.
 
             Finally, write .ticket-watch/summary.md with one line per race you looked at, for example:
@@ -72,7 +72,7 @@ jobs:
         id: risk
         if: steps.watch.outputs.changed == 'true'
         run: |
-          python3 scripts/bump_updated.py "$RUNNER_TEMP/tickets.before.json" tickets.json "${{ steps.watch.outputs.today }}"
+          python3 scripts/bump_updated.py "$RUNNER_TEMP/tickets.before.json" tickets.json
           python3 scripts/validate.py tickets.json \
             --base "$RUNNER_TEMP/tickets.before.json" \
             --report .ticket-watch/report.md --github-output

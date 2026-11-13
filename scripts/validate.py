@@ -17,6 +17,7 @@ import re
 import sys
 
 DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+TIMESTAMP = re.compile(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2})?Z$")
 KINDS = {"generalSale", "presale", "earlyBird", "discount", "waitlist"}
 TIERS = {"generalAdmission", "grandstand", "hospitality", "paddockClub"}
 GOALS = {"budget", "firstTimer", "bestView", "atmosphere", "family", "premium"}
@@ -39,6 +40,17 @@ def is_date(value):
         return False
 
 
+def is_timestamp(value):
+    """A UTC ISO 8601 timestamp such as 2026-11-13T15:04:05Z."""
+    if not isinstance(value, str) or not TIMESTAMP.match(value):
+        return False
+    try:
+        dt.datetime.fromisoformat(value.replace("Z", "+00:00"))
+        return True
+    except ValueError:
+        return False
+
+
 def validate(data):
     """Returns a list of error strings (empty when valid)."""
     errors = []
@@ -46,8 +58,8 @@ def validate(data):
         return ["top level must be an object"]
     if not isinstance(data.get("version"), int):
         errors.append("'version' must be a number")
-    if not is_date(data.get("updated")):
-        errors.append("'updated' must be a YYYY-MM-DD date")
+    if not (is_timestamp(data.get("updated")) or is_date(data.get("updated"))):
+        errors.append("'updated' must be a UTC timestamp (2026-11-13T15:04:05Z) or a YYYY-MM-DD date")
     events = data.get("events")
     if not isinstance(events, list) or not events:
         return errors + ["'events' must be a non-empty list"]

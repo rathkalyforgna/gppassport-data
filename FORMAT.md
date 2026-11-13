@@ -8,7 +8,7 @@ one stray comma breaks it for everyone (the publish step blocks invalid files).
 | Field | Type | Notes |
 | --- | --- | --- |
 | `version` | number | Format version (currently 4). |
-| `updated` | `"YYYY-MM-DD"` | **Bump to today whenever you change anything.** The app ignores files older than its own copy. |
+| `updated` | `"2026-11-13T15:04:05Z"` | When the file last changed, as a **UTC** timestamp (the `Z`). The robot sets it automatically. **When you edit by hand, update it too** — the current UTC time, or at least today's date (`"2026-11-13"`). The app ignores files older than its own copy. |
 | `events` | array | One entry per Grand Prix per season. |
 | `guides` | array | "Which ticket?" picks per circuit (shared across seasons). |
 
