@@ -1,9 +1,24 @@
 name: Validate tickets.json
-on: [push, pull_request]
+
+# Checks every pull request (including the bot's review PRs) and lists what
+# would change and how risky it is. Pushes to main are validated by "Publish".
+on:
+  pull_request:
+    paths: [tickets.json]
+
+permissions:
+  contents: read
+
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Check JSON is valid
-        run: python3 -c "import json; json.load(open('tickets.json')); print('tickets.json is valid')"
+        with:
+          fetch-depth: 0
+
+      - name: Validate and compare with main
+        run: |
+          git show "origin/${{ github.base_ref }}:tickets.json" > "$RUNNER_TEMP/base.json"
+          python3 scripts/validate.py tickets.json --base "$RUNNER_TEMP/base.json" --report "$RUNNER_TEMP/report.md"
+          cat "$RUNNER_TEMP/report.md" >> "$GITHUB_STEP_SUMMARY"

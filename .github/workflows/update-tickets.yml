@@ -1,0 +1,94 @@
+name: Update tickets
+
+# Every hour: check each upcoming race's official pages. Only when a page's
+# ticket information changed does Claude read it and update tickets.json.
+# Safe changes publish automatically; risky ones open a pull request for review.
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  id-token: write
+
+concurrency:
+  group: update-tickets
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    outputs:
+      published: ${{ steps.save.outputs.published }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check official pages
+        id: watch
+        run: python3 scripts/watch.py
+
+      - name: Keep a copy of the current data
+        if: steps.watch.outputs.changed == 'true'
+        run: cp tickets.json "$RUNNER_TEMP/tickets.before.json"
+
+      - name: Ask Claude to update the changed races
+        if: steps.watch.outputs.changed == 'true'
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          claude_args: |
+            --model claude-opus-5-5
+            --max-turns 40
+            --allowedTools "Read,Edit,Write,Glob,Grep,Bash(python3 scripts/validate.py:*)"
+          prompt: |
+            You maintain tickets.json, the Grand Prix ticket data behind the GP Passport iOS app.
+            Today is ${{ steps.watch.outputs.today }}. The format is documented in FORMAT.md — read it first.
+
+            The official ticket pages listed in .ticket-watch/changes.md changed since the last hourly check.
+            Their text is saved under .ticket-watch/pages/. For each race listed there:
+
+            1. Read the saved page text and the race's current entry in tickets.json (match season + circuitId).
+            2. Update ONLY that entry, and only with facts the page explicitly states for that race and season:
+               sale windows (kind, title, start, end, soldOut), soldOut, priceFrom, prices (adult face value in
+               local currency; set pricesAsOf to today when you change prices), pricesNote, and note.
+            3. Never guess, infer or estimate a date or price. Ignore resale/marketplace prices, other seasons,
+               other events and promotional text. If nothing ticket-related actually changed, leave the entry alone.
+            4. Do not change any other race, the guides, season/round/race dates, or the ticket URL.
+               Add the page's URL to the entry's "sources" if it isn't there.
+            5. Keep the existing formatting style (small objects such as windows and prices on one line).
+
+            If you changed anything, set the top-level "updated" to today.
+            Then run `python3 scripts/validate.py tickets.json` and fix any problem it reports.
+
+            Finally, write .ticket-watch/summary.md with one line per race you looked at, for example:
+            "- Canadian GP 2027: general sale announced for 2 Dec (gpcanada.ca)" or
+            "- Monaco GP 2027: no ticket change (page layout only)".
+
+      - name: Validate and check risk
+        id: risk
+        if: steps.watch.outputs.changed == 'true'
+        run: |
+          python3 scripts/bump_updated.py "$RUNNER_TEMP/tickets.before.json" tickets.json "${{ steps.watch.outputs.today }}"
+          python3 scripts/validate.py tickets.json \
+            --base "$RUNNER_TEMP/tickets.before.json" \
+            --report .ticket-watch/report.md --github-output
+
+      - name: Save results
+        id: save
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RISK: ${{ steps.risk.outputs.risk || 'none' }}
+        run: bash scripts/save.sh
+
+  publish:
+    needs: update
+    if: needs.update.outputs.published == 'true'
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/publish.yml

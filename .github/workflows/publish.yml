@@ -1,0 +1,46 @@
+name: Publish
+
+# Publishes tickets.json to GitHub Pages — only after it passes validation, so a
+# broken file never reaches the app. Runs on every push to main (your edits and
+# merged review PRs) and is called by "Update tickets" after automatic updates.
+on:
+  push:
+    branches: [main]
+    paths: [tickets.json]
+  workflow_call:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Validate tickets.json
+        run: python3 scripts/validate.py tickets.json
+
+      - name: Prepare site
+        run: |
+          mkdir -p _site
+          cp tickets.json _site/
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v4

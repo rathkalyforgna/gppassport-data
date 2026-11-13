@@ -295,7 +295,7 @@
       "soldOut": false,
       "priceFrom": null,
       "windows": [
-        {"kind": "generalSale", "title": "General sale", "start": "2026-11-13", "end": null}
+        {"kind": "waitlist", "title": "Sign up for the general-sale date", "start": null, "end": null}
       ],
       "note": "The presale has run, but the public sale planned for 24 September was postponed and no new date is set. Sprint weekend.",
       "sources": [
