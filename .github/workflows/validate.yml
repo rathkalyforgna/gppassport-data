@@ -1,0 +1,9 @@
+name: Validate tickets.json
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check JSON is valid
+        run: python3 -c "import json; json.load(open('tickets.json')); print('tickets.json is valid')"
