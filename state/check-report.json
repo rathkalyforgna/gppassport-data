@@ -7,8 +7,9 @@
   },
   "2026-las-vegas": {
     "checked": "2026-11-13",
-    "ok": 2,
+    "ok": 1,
     "problems": {
+      "https://www.f1lasvegasgp.com/": "error: 403",
       "https://www.f1lasvegasgp.com/2026/05/tickets-on-sale-now/": "error: 403"
     },
     "total": 3
