@@ -57,4 +57,15 @@ if [ "${RISK}" = "high" ]; then
     --body-file "${RUNNER_TEMP}/pr.md"
 fi
 
+# Show what happened on the run's summary page in GitHub.
+if [ -n "${GITHUB_STEP_SUMMARY:-}" ]; then
+  {
+    echo "## Ticket check — risk: ${RISK}, published: ${published}"
+    echo
+    if [ -n "${summary}" ]; then echo "${summary}"; else echo "_No ticket pages changed._"; fi
+    echo
+    if [ -f .ticket-watch/report.md ]; then cat .ticket-watch/report.md; fi
+  } >> "${GITHUB_STEP_SUMMARY}"
+fi
+
 echo "published=${published}" >> "${GITHUB_OUTPUT}"
