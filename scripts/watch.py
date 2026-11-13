@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check each upcoming race's official pages for ticket changes.
+"""Check upcoming races' official pages for ticket changes.
 
 Fetches the URLs in sources.json, keeps only ticket-related lines (prices, sale
 dates, "sold out", ...) and compares a fingerprint with state/page-hashes.json.
@@ -7,7 +7,15 @@ Pages that changed are saved to .ticket-watch/pages/ and listed in
 .ticket-watch/changes.md for Claude. A URL seen for the first time only records
 a baseline. Uses only the Python standard library.
 
-    python3 scripts/watch.py [--max-races 6]
+Checking speed adjusts to each race: "hot" races (a sale or deal starting or
+ending within 7 days, a presale running, the race within 30 days, or no sale
+date yet during on-sale season) are checked every run (hourly); quiet races
+every 6 hours, spread across the day. Sold-out and finished races are skipped.
+
+It also follows each site's robots.txt and backs off from a site for a while
+when it refuses access (HTTP 403/429/503), instead of retrying every hour.
+
+    python3 scripts/watch.py [--all] [--max-races 6]
 """
 
 import argparse
@@ -19,11 +27,15 @@ import os
 import pathlib
 import re
 import urllib.error
+import urllib.parse
 import urllib.request
+import urllib.robotparser
+import zlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 STATE = ROOT / "state" / "page-hashes.json"
 REPORT = ROOT / "state" / "check-report.json"
+BACKOFF = ROOT / "state" / "backoff.json"
 WORK = ROOT / ".ticket-watch"
 USER_AGENT = "Mozilla/5.0 (compatible; GPPassportTicketWatch/1.0; +https://rathkalyforgna.github.io/gppassport-data/)"
 # Lines worth watching: ticket words, money and dates. Everything else is page chrome.
@@ -35,6 +47,16 @@ RELEVANT = re.compile(
     re.IGNORECASE,
 )
 MAX_PAGE_CHARS = 60_000
+# The token sites' robots.txt rules are matched against.
+ROBOTS_AGENT = "GPPassportTicketWatch"
+# Quiet races are checked once every this many hours.
+QUIET_EVERY_HOURS = 6
+HOT_WINDOW_DAYS = 7
+HOT_RACE_DAYS = 30
+ON_SALE_SEASON_MONTHS = {9, 10, 11, 12}
+# How long to leave a site alone after it refuses access.
+BACKOFF_HOURS = 24
+REFUSED = {403, 429, 503}
 
 
 class TextExtractor(html.parser.HTMLParser):
@@ -105,35 +127,150 @@ def load(path, default):
         return default
 
 
+# MARK: - Checking speed
+
+def hot_reason(event, today):
+    """Why a race should be checked every hour right now, or None if it's quiet."""
+    day = dt.date.fromisoformat(today)
+    soon = (day + dt.timedelta(days=HOT_WINDOW_DAYS)).isoformat()
+    for window in event.get("windows", []):
+        if window.get("kind") == "waitlist" or window.get("soldOut"):
+            continue
+        start, end = window.get("start"), window.get("end")
+        if start and today <= start <= soon:
+            return f"{window['title']} starts {start}"
+        if end and today <= end <= soon:
+            return f"{window['title']} ends {end}"
+        if window.get("kind") == "presale" and (not start or start <= today) and (not end or end >= today):
+            return "presale running"
+    if event["raceStart"] <= (day + dt.timedelta(days=HOT_RACE_DAYS)).isoformat():
+        return "race within 30 days"
+    sale_known = any(
+        w.get("kind") in {"generalSale", "earlyBird", "discount"} and not (w.get("end") and w["end"] < today)
+        for w in event.get("windows", [])
+    )
+    if not sale_known and day.month in ON_SALE_SEASON_MONTHS:
+        return "no sale date yet (on-sale season)"
+    return None
+
+
+def quiet_turn(event_id, hour):
+    """Spreads quiet races evenly over the cycle: each gets a fixed hour slot."""
+    return zlib.crc32(event_id.encode()) % QUIET_EVERY_HOURS == hour % QUIET_EVERY_HOURS
+
+
+# MARK: - Politeness: robots.txt and back-off
+
+class Politeness:
+    def __init__(self, backoff, now):
+        self.backoff = backoff
+        self.now = now
+        self.robots = {}
+
+    def blocked_until(self, url):
+        until = self.backoff.get(urllib.parse.urlparse(url).hostname or "")
+        if until and dt.datetime.fromisoformat(until) > self.now:
+            return until
+        return None
+
+    def allowed_by_robots(self, url):
+        """True if robots.txt lets us fetch the URL (no robots.txt = allowed)."""
+        parts = urllib.parse.urlparse(url)
+        root = f"{parts.scheme}://{parts.netloc}"
+        if root not in self.robots:
+            parser = urllib.robotparser.RobotFileParser()
+            try:
+                request = urllib.request.Request(f"{root}/robots.txt", headers={"User-Agent": USER_AGENT})
+                with urllib.request.urlopen(request, timeout=15) as response:
+                    parser.parse(response.read(500_000).decode("utf-8", errors="replace").splitlines())
+            except urllib.error.HTTPError as error:
+                # Like the major search engines: a missing/forbidden robots.txt (4xx) means no rules;
+                # a server error means "try later".
+                parser = None if error.code >= 500 else "allow"
+            except (urllib.error.URLError, TimeoutError, OSError):
+                parser = None
+            self.robots[root] = parser
+        parser = self.robots[root]
+        if parser is None:
+            return None  # robots.txt unreachable — skip the site this run
+        if parser == "allow":
+            return True
+        return parser.can_fetch(ROBOTS_AGENT, url)
+
+    def refused(self, url, error):
+        """Back off from a site that refused access, honouring Retry-After when given."""
+        hours = BACKOFF_HOURS
+        retry_after = error.headers.get("Retry-After") if getattr(error, "headers", None) else None
+        if retry_after and retry_after.isdigit():
+            hours = min(max(int(retry_after) / 3600, 1), BACKOFF_HOURS)
+        until = (self.now + dt.timedelta(hours=hours)).replace(microsecond=0)
+        host = urllib.parse.urlparse(url).hostname or ""
+        self.backoff[host] = until.isoformat()
+        return until.strftime("%Y-%m-%d %H:%MZ")
+
+    def tidy(self):
+        """Drops back-offs that have expired."""
+        for host, until in list(self.backoff.items()):
+            if dt.datetime.fromisoformat(until) <= self.now:
+                del self.backoff[host]
+
+
+# MARK: - Main
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--max-races", type=int, default=6, help="max races sent to Claude per run")
+    parser.add_argument("--all", action="store_true", help="check every race now (manual runs)")
     args = parser.parse_args()
 
-    today = dt.date.today().isoformat()
-    now = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
+    clock = dt.datetime.now(dt.timezone.utc)
+    today = clock.date().isoformat()
+    now = clock.strftime("%Y-%m-%dT%H:%MZ")
     tickets = json.loads((ROOT / "tickets.json").read_text(encoding="utf-8"))
     sources = json.loads((ROOT / "sources.json").read_text(encoding="utf-8"))
     hashes = load(STATE, {})
     report = load(REPORT, {})
+    polite = Politeness(load(BACKOFF, {}), clock)
 
     # Soonest races first, so a busy run handles the most urgent ones.
-    events = sorted(
+    upcoming = sorted(
         (e for e in tickets["events"] if e["raceEnd"] >= today and not e.get("soldOut")),
         key=lambda e: e["raceStart"],
     )
-    changed = []
-    for event in events:
+    plan = []
+    for event in upcoming:
         event_id = f"{event['season']}-{event['circuitId']}"
+        reason = hot_reason(event, today)
+        if args.all or reason or quiet_turn(event_id, clock.hour):
+            plan.append((event, event_id, reason or ("manual run" if args.all else "quiet — 6-hourly turn")))
+
+    changed = []
+    for event, event_id, reason in plan:
         urls = sources.get(event_id, [])
         statuses = {}
         event_changed = []
         for url in urls:
+            until = polite.blocked_until(url)
+            if until:
+                statuses[url] = f"backing off until {until[:16]}Z"
+                continue
+            robots = polite.allowed_by_robots(url)
+            if robots is None:
+                statuses[url] = "skipped: robots.txt unreachable"
+                continue
+            if not robots:
+                statuses[url] = "skipped: disallowed by robots.txt"
+                continue
             try:
                 lines = fetch_text(url)
+            except urllib.error.HTTPError as error:
+                if error.code in REFUSED:
+                    statuses[url] = f"error: {error.code} — backing off until {polite.refused(url, error)}"
+                else:
+                    statuses[url] = f"error: {error.code}"
+                continue
             except (urllib.error.URLError, TimeoutError, OSError, ValueError) as error:
-                reason = getattr(error, "code", None) or getattr(error, "reason", None) or error
-                statuses[url] = f"error: {reason}"
+                statuses[url] = f"error: {getattr(error, 'reason', None) or error}"
                 continue
             digest, relevant_count = fingerprint(lines)
             if relevant_count == 0:
@@ -155,14 +292,17 @@ def main():
         report[event_id] = {
             # Date only, so the report changes (and is committed) at most once a day.
             "checked": today,
+            "speed": "hourly" if hot_reason(event, today) else "6-hourly",
             "ok": sum(1 for s in statuses.values() if s == "ok"),
             "total": len(urls),
             "problems": {url: s for url, s in statuses.items() if s != "ok"},
         }
 
+    polite.tidy()
     STATE.parent.mkdir(exist_ok=True)
     STATE.write_text(json.dumps(hashes, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     REPORT.write_text(json.dumps(report, indent=2, sort_keys=True, ensure_ascii=False) + "\n", encoding="utf-8")
+    BACKOFF.write_text(json.dumps(polite.backoff, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 
     if changed:
         pages = WORK / "pages"
@@ -177,10 +317,13 @@ def main():
             listing.append("")
         (WORK / "changes.md").write_text("\n".join(listing), encoding="utf-8")
 
-    unreadable = sorted(k for k, v in report.items() if v.get("total") and v.get("ok") == 0)
-    print(f"Checked {len(events)} races; {len(changed)} with ticket changes.")
+    hot = sum(1 for _, _, r in plan if not r.startswith(("quiet", "manual")))
+    print(f"Checked {len(plan)} of {len(upcoming)} upcoming races ({hot} hot); {len(changed)} with ticket changes.")
+    for event, event_id, reason in plan:
+        print(f"  {event_id}: {reason}")
     for event, items in changed:
         print(f"  changed: {event['season']} {event['circuitId']} ({len(items)} page(s))")
+    unreadable = sorted(k for k, v in report.items() if v.get("total") and v.get("ok") == 0)
     if unreadable:
         print(f"  couldn't read any source for: {', '.join(unreadable)}")
 

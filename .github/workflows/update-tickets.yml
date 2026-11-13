@@ -1,7 +1,8 @@
 name: Update tickets
 
-# Every hour: check each upcoming race's official pages. Only when a page's
-# ticket information changed does Claude read it and update tickets.json.
+# Every hour: check upcoming races' official pages — hot races every hour,
+# quiet ones every 6 hours (see scripts/watch.py). Only when a page's ticket
+# information changed does Claude read it and update tickets.json.
 # Safe changes publish automatically; risky ones open a pull request for review.
 on:
   schedule:
@@ -28,7 +29,9 @@ jobs:
 
       - name: Check official pages
         id: watch
-        run: python3 scripts/watch.py
+        # Hourly runs check "hot" races every hour and quiet ones every 6 hours;
+        # a manual "Run workflow" checks every race.
+        run: python3 scripts/watch.py ${{ github.event_name == 'workflow_dispatch' && '--all' || '' }}
 
       - name: Keep a copy of the current data
         if: steps.watch.outputs.changed == 'true'

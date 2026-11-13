@@ -3,15 +3,17 @@
     "checked": "2026-11-13",
     "ok": 1,
     "problems": {},
+    "speed": "hourly",
     "total": 1
   },
   "2026-las-vegas": {
     "checked": "2026-11-13",
     "ok": 1,
     "problems": {
-      "https://www.f1lasvegasgp.com/": "error: 403",
-      "https://www.f1lasvegasgp.com/2026/05/tickets-on-sale-now/": "error: 403"
+      "https://www.f1lasvegasgp.com/": "error: 403 — backing off until 2026-11-14 16:30Z",
+      "https://www.f1lasvegasgp.com/2026/05/tickets-on-sale-now/": "backing off until 2026-11-14T16:30Z"
     },
+    "speed": "hourly",
     "total": 3
   },
   "2026-qatar": {
@@ -20,12 +22,14 @@
     "problems": {
       "https://tickets.lcsc.qa": "no readable ticket text"
     },
+    "speed": "hourly",
     "total": 2
   },
   "2027-abu-dhabi": {
     "checked": "2026-11-13",
     "ok": 1,
     "problems": {},
+    "speed": "hourly",
     "total": 1
   },
   "2027-australia": {
@@ -38,12 +42,14 @@
     "checked": "2026-11-13",
     "ok": 2,
     "problems": {},
+    "speed": "6-hourly",
     "total": 2
   },
   "2027-azerbaijan": {
     "checked": "2026-11-13",
     "ok": 1,
     "problems": {},
+    "speed": "hourly",
     "total": 1
   },
   "2027-bahrain": {
@@ -62,20 +68,23 @@
     "checked": "2026-11-13",
     "ok": 1,
     "problems": {
-      "https://www.eventim.com.br/f1saopaulo": "error: The read operation timed out"
+      "https://www.eventim.com.br/f1saopaulo": "skipped: robots.txt unreachable"
     },
+    "speed": "hourly",
     "total": 2
   },
   "2027-canada": {
     "checked": "2026-11-13",
     "ok": 2,
     "problems": {},
+    "speed": "hourly",
     "total": 2
   },
   "2027-china": {
     "checked": "2026-11-13",
     "ok": 1,
     "problems": {},
+    "speed": "hourly",
     "total": 1
   },
   "2027-great-britain": {
@@ -94,18 +103,21 @@
     "checked": "2026-11-13",
     "ok": 1,
     "problems": {},
+    "speed": "6-hourly",
     "total": 1
   },
   "2027-japan": {
     "checked": "2026-11-13",
     "ok": 1,
     "problems": {},
+    "speed": "hourly",
     "total": 1
   },
   "2027-las-vegas": {
     "checked": "2026-11-13",
     "ok": 1,
     "problems": {},
+    "speed": "hourly",
     "total": 1
   },
   "2027-madrid": {
@@ -142,6 +154,7 @@
     "checked": "2026-11-13",
     "ok": 1,
     "problems": {},
+    "speed": "hourly",
     "total": 1
   },
   "2027-saudi-arabia": {
@@ -163,12 +176,14 @@
     "checked": "2026-11-13",
     "ok": 2,
     "problems": {},
+    "speed": "hourly",
     "total": 2
   },
   "2027-united-states": {
     "checked": "2026-11-13",
     "ok": 3,
     "problems": {},
+    "speed": "hourly",
     "total": 3
   }
 }
