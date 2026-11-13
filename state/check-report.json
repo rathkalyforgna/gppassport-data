@@ -10,7 +10,7 @@
     "checked": "2026-11-13",
     "ok": 1,
     "problems": {
-      "https://www.f1lasvegasgp.com/": "error: 403 — backing off until 2026-11-14 16:30Z",
+      "https://www.f1lasvegasgp.com/": "backing off until 2026-11-14T16:30Z",
       "https://www.f1lasvegasgp.com/2026/05/tickets-on-sale-now/": "backing off until 2026-11-14T16:30Z"
     },
     "speed": "hourly",
@@ -36,6 +36,7 @@
     "checked": "2026-11-13",
     "ok": 2,
     "problems": {},
+    "speed": "6-hourly",
     "total": 2
   },
   "2027-austria": {
@@ -56,12 +57,14 @@
     "checked": "2026-11-13",
     "ok": 3,
     "problems": {},
+    "speed": "6-hourly",
     "total": 3
   },
   "2027-belgium": {
     "checked": "2026-11-13",
     "ok": 1,
     "problems": {},
+    "speed": "6-hourly",
     "total": 1
   },
   "2027-brazil": {
@@ -91,12 +94,14 @@
     "checked": "2026-11-13",
     "ok": 1,
     "problems": {},
+    "speed": "6-hourly",
     "total": 1
   },
   "2027-hungary": {
     "checked": "2026-11-13",
     "ok": 1,
     "problems": {},
+    "speed": "6-hourly",
     "total": 1
   },
   "2027-italy": {
@@ -124,30 +129,35 @@
     "checked": "2026-11-13",
     "ok": 2,
     "problems": {},
+    "speed": "6-hourly",
     "total": 2
   },
   "2027-mexico": {
     "checked": "2026-11-13",
     "ok": 1,
     "problems": {},
+    "speed": "6-hourly",
     "total": 1
   },
   "2027-miami": {
     "checked": "2026-11-13",
     "ok": 2,
     "problems": {},
+    "speed": "6-hourly",
     "total": 2
   },
   "2027-monaco": {
     "checked": "2026-11-13",
     "ok": 1,
     "problems": {},
+    "speed": "6-hourly",
     "total": 1
   },
   "2027-portugal": {
     "checked": "2026-11-13",
     "ok": 1,
     "problems": {},
+    "speed": "6-hourly",
     "total": 1
   },
   "2027-qatar": {
@@ -164,12 +174,14 @@
       "https://tickets.saudiarabiangp.com/en": "no readable ticket text",
       "https://www.saudiarabiangp.com/en": "no readable ticket text"
     },
+    "speed": "6-hourly",
     "total": 3
   },
   "2027-singapore": {
     "checked": "2026-11-13",
     "ok": 1,
     "problems": {},
+    "speed": "6-hourly",
     "total": 1
   },
   "2027-turkey": {
