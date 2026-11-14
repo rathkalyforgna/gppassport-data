@@ -10,7 +10,7 @@
     "checked": "2026-11-14",
     "ok": 1,
     "problems": {
-      "https://www.f1lasvegasgp.com/": "error: 403 — backing off until 2026-11-15 17:12Z",
+      "https://www.f1lasvegasgp.com/": "backing off until 2026-11-15T17:12Z",
       "https://www.f1lasvegasgp.com/2026/05/tickets-on-sale-now/": "backing off until 2026-11-15T17:12Z"
     },
     "speed": "hourly",
@@ -18,10 +18,8 @@
   },
   "2026-qatar": {
     "checked": "2026-11-14",
-    "ok": 1,
-    "problems": {
-      "https://tickets.lcsc.qa": "no readable ticket text"
-    },
+    "ok": 2,
+    "problems": {},
     "speed": "hourly",
     "total": 2
   },
@@ -61,7 +59,7 @@
     "total": 3
   },
   "2027-belgium": {
-    "checked": "2026-11-13",
+    "checked": "2026-11-14",
     "ok": 1,
     "problems": {},
     "speed": "6-hourly",
@@ -133,7 +131,7 @@
     "total": 2
   },
   "2027-mexico": {
-    "checked": "2026-11-13",
+    "checked": "2026-11-14",
     "ok": 1,
     "problems": {},
     "speed": "6-hourly",
@@ -147,7 +145,7 @@
     "total": 2
   },
   "2027-monaco": {
-    "checked": "2026-11-13",
+    "checked": "2026-11-14",
     "ok": 1,
     "problems": {},
     "speed": "6-hourly",
@@ -168,7 +166,7 @@
     "total": 1
   },
   "2027-saudi-arabia": {
-    "checked": "2026-11-13",
+    "checked": "2026-11-14",
     "ok": 1,
     "problems": {
       "https://tickets.saudiarabiangp.com/en": "no readable ticket text",
