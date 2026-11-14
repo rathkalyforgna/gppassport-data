@@ -18,8 +18,10 @@
   },
   "2026-qatar": {
     "checked": "2026-11-14",
-    "ok": 2,
-    "problems": {},
+    "ok": 1,
+    "problems": {
+      "https://tickets.lcsc.qa": "no readable ticket text"
+    },
     "speed": "hourly",
     "total": 2
   },
@@ -38,7 +40,7 @@
     "total": 2
   },
   "2027-austria": {
-    "checked": "2026-11-13",
+    "checked": "2026-11-14",
     "ok": 2,
     "problems": {},
     "speed": "6-hourly",
@@ -103,7 +105,7 @@
     "total": 1
   },
   "2027-italy": {
-    "checked": "2026-11-13",
+    "checked": "2026-11-14",
     "ok": 1,
     "problems": {},
     "speed": "6-hourly",
