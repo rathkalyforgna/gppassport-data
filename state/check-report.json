@@ -10,8 +10,8 @@
     "checked": "2026-11-16",
     "ok": 1,
     "problems": {
-      "https://www.f1lasvegasgp.com/": "backing off until 2026-11-16T17:15Z",
-      "https://www.f1lasvegasgp.com/2026/05/tickets-on-sale-now/": "backing off until 2026-11-16T17:15Z"
+      "https://www.f1lasvegasgp.com/": "error: 403 — backing off until 2026-11-17 20:33Z",
+      "https://www.f1lasvegasgp.com/2026/05/tickets-on-sale-now/": "backing off until 2026-11-17T20:33Z"
     },
     "speed": "hourly",
     "total": 3
