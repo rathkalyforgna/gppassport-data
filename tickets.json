@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "updated": "2026-11-13T16:19:36Z",
+  "updated": "2026-11-16T02:16:05Z",
   "events": [
     {
       "season": 2026,
@@ -635,21 +635,21 @@
         {"kind": "earlyBird", "title": "Early Bird — up to 15% off", "start": "2026-10-19", "end": "2026-11-10", "soldOut": true},
         {"kind": "generalSale", "title": "Regular sale", "start": "2026-11-11", "end": null}
       ],
-      "pricesAsOf": "2026-11-10",
+      "pricesAsOf": "2026-11-16",
       "pricesNote": "Official adult prices incl. GST. Paddock Club is sold out.",
       "prices": [
         {"ticket": "Zone 4 Walkabout", "type": "generalAdmission", "amount": 598, "currency": "SGD", "days": "3-day"},
-        {"ticket": "Stamford Grandstand", "type": "grandstand", "amount": 638, "currency": "SGD", "days": "3-day"},
-        {"ticket": "Padang Grandstand", "type": "grandstand", "amount": 768, "currency": "SGD", "days": "3-day"},
-        {"ticket": "Republic Grandstand", "type": "grandstand", "amount": 1038, "currency": "SGD", "days": "3-day"},
+        {"ticket": "Stamford Grandstand", "type": "grandstand", "amount": 638, "currency": "SGD", "days": "3-day", "soldOut": true},
+        {"ticket": "Padang Grandstand", "type": "grandstand", "amount": 768, "currency": "SGD", "days": "3-day", "soldOut": true},
+        {"ticket": "Republic Grandstand", "type": "grandstand", "amount": 1038, "currency": "SGD", "days": "3-day", "soldOut": true},
         {"ticket": "Bayfront Grandstand", "type": "grandstand", "amount": 1488, "currency": "SGD", "days": "3-day"},
-        {"ticket": "Marina Bay Grandstand", "type": "grandstand", "amount": 1798, "currency": "SGD", "days": "3-day"},
-        {"ticket": "Turn 1 Grandstand", "type": "grandstand", "amount": 1798, "currency": "SGD", "days": "3-day"},
-        {"ticket": "Pit Grandstand", "type": "grandstand", "amount": 1888, "currency": "SGD", "days": "3-day"},
+        {"ticket": "Marina Bay Grandstand", "type": "grandstand", "amount": 1798, "currency": "SGD", "days": "3-day", "soldOut": true},
+        {"ticket": "Turn 1 Grandstand", "type": "grandstand", "amount": 1798, "currency": "SGD", "days": "3-day", "soldOut": true},
+        {"ticket": "Pit Grandstand", "type": "grandstand", "amount": 1888, "currency": "SGD", "days": "3-day", "soldOut": true},
         {"ticket": "Super Pit Grandstand", "type": "grandstand", "amount": 2608, "currency": "SGD", "days": "3-day"},
         {"ticket": "Lounge Plus", "type": "hospitality", "amount": 6527, "currency": "SGD", "days": "3-day"}
       ],
-      "note": "Raffles, Republic and Connaught grandstands, Paddock Club and Sky Suite are sold out. 'From' price is a Zone 4 Walkabout 3-day pass.",
+      "note": "Raffles grandstand, Paddock Club and Sky Suite are sold out. Pit, Turn 1, Turn 2, Marina Bay, Republic, Connaught, Padang, Empress and Stamford grandstands are currently sold out ('Notify Me' if seats return). 'From' price is a Zone 4 Walkabout 3-day pass.",
       "sources": [
         "https://singaporegp.sg/en/tickets/"
       ]
