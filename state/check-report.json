@@ -59,7 +59,7 @@
     "total": 3
   },
   "2027-belgium": {
-    "checked": "2026-11-15",
+    "checked": "2026-11-16",
     "ok": 1,
     "problems": {},
     "speed": "6-hourly",
@@ -131,7 +131,7 @@
     "total": 2
   },
   "2027-mexico": {
-    "checked": "2026-11-15",
+    "checked": "2026-11-16",
     "ok": 1,
     "problems": {},
     "speed": "6-hourly",
@@ -145,7 +145,7 @@
     "total": 2
   },
   "2027-monaco": {
-    "checked": "2026-11-15",
+    "checked": "2026-11-16",
     "ok": 1,
     "problems": {},
     "speed": "6-hourly",
@@ -166,7 +166,7 @@
     "total": 1
   },
   "2027-saudi-arabia": {
-    "checked": "2026-11-15",
+    "checked": "2026-11-16",
     "ok": 1,
     "problems": {
       "https://tickets.saudiarabiangp.com/en": "no readable ticket text",
