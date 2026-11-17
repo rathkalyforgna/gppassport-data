@@ -10,8 +10,8 @@
     "checked": "2026-11-17",
     "ok": 1,
     "problems": {
-      "https://www.f1lasvegasgp.com/": "backing off until 2026-11-17T20:33Z",
-      "https://www.f1lasvegasgp.com/2026/05/tickets-on-sale-now/": "backing off until 2026-11-17T20:33Z"
+      "https://www.f1lasvegasgp.com/": "error: 403 — backing off until 2026-11-18 22:28Z",
+      "https://www.f1lasvegasgp.com/2026/05/tickets-on-sale-now/": "backing off until 2026-11-18T22:28Z"
     },
     "speed": "hourly",
     "total": 3
@@ -38,7 +38,7 @@
     "total": 2
   },
   "2027-austria": {
-    "checked": "2026-11-14",
+    "checked": "2026-11-17",
     "ok": 2,
     "problems": {},
     "speed": "6-hourly",
@@ -66,12 +66,12 @@
     "total": 1
   },
   "2027-brazil": {
-    "checked": "2026-11-16",
+    "checked": "2026-11-17",
     "ok": 1,
     "problems": {
       "https://www.eventim.com.br/f1saopaulo": "skipped: robots.txt unreachable"
     },
-    "speed": "hourly",
+    "speed": "6-hourly",
     "total": 2
   },
   "2027-canada": {
@@ -103,7 +103,7 @@
     "total": 1
   },
   "2027-italy": {
-    "checked": "2026-11-14",
+    "checked": "2026-11-17",
     "ok": 1,
     "problems": {},
     "speed": "6-hourly",
