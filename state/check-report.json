@@ -45,10 +45,10 @@
     "total": 2
   },
   "2027-azerbaijan": {
-    "checked": "2026-11-16",
+    "checked": "2026-11-18",
     "ok": 1,
     "problems": {},
-    "speed": "hourly",
+    "speed": "6-hourly",
     "total": 1
   },
   "2027-bahrain": {
@@ -176,7 +176,7 @@
     "total": 3
   },
   "2027-singapore": {
-    "checked": "2026-11-16",
+    "checked": "2026-11-18",
     "ok": 1,
     "problems": {},
     "speed": "6-hourly",
