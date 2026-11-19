@@ -1,30 +1,30 @@
 {
   "2026-abu-dhabi": {
-    "checked": "2026-11-18",
+    "checked": "2026-11-19",
     "ok": 1,
     "problems": {},
     "speed": "hourly",
     "total": 1
   },
   "2026-las-vegas": {
-    "checked": "2026-11-18",
+    "checked": "2026-11-19",
     "ok": 1,
     "problems": {
-      "https://www.f1lasvegasgp.com/": "backing off until 2026-11-18T22:28Z",
-      "https://www.f1lasvegasgp.com/2026/05/tickets-on-sale-now/": "backing off until 2026-11-18T22:28Z"
+      "https://www.f1lasvegasgp.com/": "error: 403 — backing off until 2026-11-20 03:38Z",
+      "https://www.f1lasvegasgp.com/2026/05/tickets-on-sale-now/": "backing off until 2026-11-20T03:38Z"
     },
     "speed": "hourly",
     "total": 3
   },
   "2026-qatar": {
-    "checked": "2026-11-18",
+    "checked": "2026-11-19",
     "ok": 2,
     "problems": {},
     "speed": "hourly",
     "total": 2
   },
   "2027-abu-dhabi": {
-    "checked": "2026-11-18",
+    "checked": "2026-11-19",
     "ok": 1,
     "problems": {},
     "speed": "hourly",
@@ -59,7 +59,7 @@
     "total": 3
   },
   "2027-belgium": {
-    "checked": "2026-11-17",
+    "checked": "2026-11-19",
     "ok": 1,
     "problems": {},
     "speed": "6-hourly",
@@ -75,14 +75,14 @@
     "total": 2
   },
   "2027-canada": {
-    "checked": "2026-11-18",
+    "checked": "2026-11-19",
     "ok": 2,
     "problems": {},
     "speed": "hourly",
     "total": 2
   },
   "2027-china": {
-    "checked": "2026-11-18",
+    "checked": "2026-11-19",
     "ok": 1,
     "problems": {},
     "speed": "hourly",
@@ -110,14 +110,14 @@
     "total": 1
   },
   "2027-japan": {
-    "checked": "2026-11-18",
+    "checked": "2026-11-19",
     "ok": 1,
     "problems": {},
     "speed": "hourly",
     "total": 1
   },
   "2027-las-vegas": {
-    "checked": "2026-11-18",
+    "checked": "2026-11-19",
     "ok": 1,
     "problems": {},
     "speed": "hourly",
@@ -131,7 +131,7 @@
     "total": 2
   },
   "2027-mexico": {
-    "checked": "2026-11-17",
+    "checked": "2026-11-19",
     "ok": 1,
     "problems": {},
     "speed": "6-hourly",
@@ -145,7 +145,7 @@
     "total": 2
   },
   "2027-monaco": {
-    "checked": "2026-11-17",
+    "checked": "2026-11-19",
     "ok": 1,
     "problems": {},
     "speed": "6-hourly",
@@ -159,14 +159,14 @@
     "total": 1
   },
   "2027-qatar": {
-    "checked": "2026-11-18",
+    "checked": "2026-11-19",
     "ok": 1,
     "problems": {},
     "speed": "hourly",
     "total": 1
   },
   "2027-saudi-arabia": {
-    "checked": "2026-11-17",
+    "checked": "2026-11-19",
     "ok": 1,
     "problems": {
       "https://tickets.saudiarabiangp.com/en": "no readable ticket text",
@@ -183,14 +183,14 @@
     "total": 1
   },
   "2027-turkey": {
-    "checked": "2026-11-18",
+    "checked": "2026-11-19",
     "ok": 2,
     "problems": {},
     "speed": "hourly",
     "total": 2
   },
   "2027-united-states": {
-    "checked": "2026-11-18",
+    "checked": "2026-11-19",
     "ok": 3,
     "problems": {},
     "speed": "hourly",
