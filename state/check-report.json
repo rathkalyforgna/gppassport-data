@@ -20,7 +20,7 @@
     "checked": "2026-11-21",
     "ok": 1,
     "problems": {
-      "https://tickets.lcsc.qa": "error: 403 — backing off until 2026-11-22 02:31Z"
+      "https://tickets.lcsc.qa": "backing off until 2026-11-22T02:31Z"
     },
     "speed": "hourly",
     "total": 2
@@ -91,7 +91,7 @@
     "total": 1
   },
   "2027-great-britain": {
-    "checked": "2026-11-15",
+    "checked": "2026-11-21",
     "ok": 1,
     "problems": {},
     "speed": "6-hourly",
@@ -126,7 +126,7 @@
     "total": 1
   },
   "2027-madrid": {
-    "checked": "2026-11-15",
+    "checked": "2026-11-21",
     "ok": 2,
     "problems": {},
     "speed": "6-hourly",
@@ -140,7 +140,7 @@
     "total": 1
   },
   "2027-miami": {
-    "checked": "2026-11-15",
+    "checked": "2026-11-21",
     "ok": 2,
     "problems": {},
     "speed": "6-hourly",
@@ -154,7 +154,7 @@
     "total": 1
   },
   "2027-portugal": {
-    "checked": "2026-11-15",
+    "checked": "2026-11-21",
     "ok": 1,
     "problems": {},
     "speed": "6-hourly",
