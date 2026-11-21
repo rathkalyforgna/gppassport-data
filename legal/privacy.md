@@ -91,4 +91,6 @@ Email: [rathkalyforgna@icloud.com](mailto:rathkalyforgna@icloud.com)
 
 ---
 
+[Support](https://rathkalyforgna.github.io/gppassport-data/support.html) · [Terms of Use](https://rathkalyforgna.github.io/gppassport-data/terms.html) · [Privacy Policy](https://rathkalyforgna.github.io/gppassport-data/privacy.html)
+
 *GP Passport is an unofficial fan app. It is not affiliated with, endorsed by or associated with Formula 1, the FIA, or any team, driver or circuit. F1, FORMULA ONE, FORMULA 1, GRAND PRIX and related marks are trademarks of Formula One Licensing B.V.*

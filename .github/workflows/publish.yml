@@ -44,6 +44,8 @@ jobs:
             || echo "::warning::privacy.html not published — finish legal/privacy.md first"
           python3 scripts/build_legal.py legal/terms.md _site/terms.html \
             || echo "::warning::terms.html not published — finish legal/terms.md first"
+          python3 scripts/build_legal.py legal/support.md _site/support.html \
+            || echo "::warning::support.html not published — finish legal/support.md first"
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

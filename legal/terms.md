@@ -65,7 +65,7 @@ You agree not to:
 
 The app's design, code, artwork (including the passport stamps and icons) and text belong to us or our licensors and are protected by law. We give you a personal, non-transferable, revocable licence to use the app under these Terms and the Apple EULA. Track outlines are adapted from open data credited in the app under **Settings › Acknowledgements**.
 
-**Unofficial fan app.** GP Passport is **not affiliated with, endorsed by or associated with** Formula 1, the FIA, Formula One Management, or any team, driver, circuit or promoter. F1, FORMULA ONE, FORMULA 1, FIA FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX and related marks are trademarks of Formula One Licensing B.V. Circuit, team and event names are used only to identify them.
+**Unofficial fan app.** GP Passport is an unofficial fan app. It is not affiliated with, endorsed by or associated with Formula 1, the FIA, or any team, driver or circuit. F1, FORMULA ONE, FORMULA 1, GRAND PRIX and related marks are trademarks of Formula One Licensing B.V. Circuit, team and event names are used only to identify them.
 
 ## 8. Third-party services
 
@@ -95,3 +95,9 @@ These Terms are governed by the laws of the Kingdom of Cambodia, without regard 
 
 Rathkalyforgna Chhin
 Email: [rathkalyforgna@icloud.com](mailto:rathkalyforgna@icloud.com)
+
+---
+
+[Support](https://rathkalyforgna.github.io/gppassport-data/support.html) · [Terms of Use](https://rathkalyforgna.github.io/gppassport-data/terms.html) · [Privacy Policy](https://rathkalyforgna.github.io/gppassport-data/privacy.html)
+
+*GP Passport is an unofficial fan app. It is not affiliated with, endorsed by or associated with Formula 1, the FIA, or any team, driver or circuit. F1, FORMULA ONE, FORMULA 1, GRAND PRIX and related marks are trademarks of Formula One Licensing B.V.*
