@@ -40,6 +40,9 @@ Apple handles all payments and refunds. Request one at [reportaproblem.apple.com
 **Where is my passport stored?**
 On your iPhone and in your private iCloud account, synced across your devices when you're signed in to iCloud. We can't see or access it. See our [Privacy Policy](https://rathkalyforgna.github.io/gppassport-data/privacy.html).
 
+**My passport is empty after reinstalling or changing iCloud settings.**
+Your stamps and profile are safe in your iCloud. When iCloud is turned off for GP Passport, or you sign out of iCloud, your iPhone removes its synced copy, so the app looks empty. To bring everything back, open **Settings › [your name] › iCloud**, make sure you're signed in to the same Apple Account, and turn on **GP Passport**. Then open the app while online. Your passport downloads automatically, which can take a few minutes. You can check progress in the app under **Settings › iCloud Sync**.
+
 **My visits aren't syncing to my other device.**
 Check you're signed in to the same Apple Account with iCloud turned on for GP Passport (**Settings › [your name] › iCloud**), then open the app on both devices while online. Syncing can take a few minutes.
 
