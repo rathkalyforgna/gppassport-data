@@ -10,8 +10,8 @@
     "checked": "2026-11-21",
     "ok": 1,
     "problems": {
-      "https://www.f1lasvegasgp.com/": "backing off until 2026-11-21T13:05Z",
-      "https://www.f1lasvegasgp.com/2026/05/tickets-on-sale-now/": "backing off until 2026-11-21T13:05Z"
+      "https://www.f1lasvegasgp.com/": "error: 403 — backing off until 2026-11-22 19:25Z",
+      "https://www.f1lasvegasgp.com/2026/05/tickets-on-sale-now/": "backing off until 2026-11-22T19:25Z"
     },
     "speed": "hourly",
     "total": 3
@@ -54,7 +54,7 @@
     "total": 1
   },
   "2027-bahrain": {
-    "checked": "2026-11-20",
+    "checked": "2026-11-21",
     "ok": 3,
     "problems": {},
     "speed": "6-hourly",
