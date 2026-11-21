@@ -1,12 +1,13 @@
 name: Publish
 
-# Publishes tickets.json to GitHub Pages — only after it passes validation, so a
-# broken file never reaches the app. Runs on every push to main (your edits and
-# merged review PRs) and is called by "Update tickets" after automatic updates.
+# Publishes tickets.json (and the Privacy Policy page) to GitHub Pages — tickets
+# only after they pass validation, so a broken file never reaches the app. Runs
+# on every push to main (your edits and merged review PRs) and is called by
+# "Update tickets" after automatic updates.
 on:
   push:
     branches: [main]
-    paths: [tickets.json]
+    paths: [tickets.json, legal/**, scripts/build_legal.py]
   workflow_call:
   workflow_dispatch:
 
@@ -37,6 +38,12 @@ jobs:
         run: |
           mkdir -p _site
           cp tickets.json _site/
+          # Legal pages are built only once finished (no DRAFT note or
+          # [PLACEHOLDERS]); an unfinished page is skipped, never blocking tickets.
+          python3 scripts/build_legal.py legal/privacy.md _site/privacy.html \
+            || echo "::warning::privacy.html not published — finish legal/privacy.md first"
+          python3 scripts/build_legal.py legal/terms.md _site/terms.html \
+            || echo "::warning::terms.html not published — finish legal/terms.md first"
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
