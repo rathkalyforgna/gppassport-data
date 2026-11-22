@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "updated": "2026-11-16T02:16:05Z",
+  "updated": "2026-11-22T00:24:53Z",
   "events": [
     {
       "season": 2026,
@@ -482,20 +482,20 @@
       "windows": [
         {"kind": "generalSale", "title": "2027 tickets on sale", "start": "2026-07-27", "end": null}
       ],
-      "pricesAsOf": "2026-11-01",
+      "pricesAsOf": "2026-11-22",
       "pricesNote": "Official ticket shop prices. Several grandstands have already sold out.",
       "prices": [
         {"ticket": "General Admission", "type": "generalAdmission", "amount": 170, "currency": "EUR", "days": "3-day"},
         {"ticket": "Fan Grandstand", "type": "grandstand", "amount": 270, "currency": "EUR", "days": "3-day", "soldOut": true},
         {"ticket": "Apex 1", "type": "grandstand", "amount": 300, "currency": "EUR", "days": "3-day", "soldOut": true},
         {"ticket": "Chicane 3", "type": "grandstand", "amount": 310, "currency": "EUR", "days": "3-day"},
-        {"ticket": "Apex 2", "type": "grandstand", "amount": 340, "currency": "EUR", "days": "3-day"},
+        {"ticket": "Apex 2", "type": "grandstand", "amount": 340, "currency": "EUR", "days": "3-day", "soldOut": true},
         {"ticket": "T1", "type": "grandstand", "amount": 500, "currency": "EUR", "days": "3-day", "soldOut": true},
         {"ticket": "Hungaroring", "type": "grandstand", "amount": 650, "currency": "EUR", "days": "3-day"},
         {"ticket": "Hungaroring Platinum", "type": "grandstand", "amount": 740, "currency": "EUR", "days": "3-day", "soldOut": true},
         {"ticket": "F1 Fan Lounge", "type": "hospitality", "amount": 1950, "currency": "EUR", "days": "3-day"}
       ],
-      "note": "Many grandstands are already sold out, including Platinum, T1, Grid and Fan.",
+      "note": "Many grandstands are already sold out, including Platinum, T1, Grid, Apex and Fan.",
       "sources": [
         "https://www.gpticketshop.hu/Formula_1_HungarianGP/Formula_1.html"
       ]
