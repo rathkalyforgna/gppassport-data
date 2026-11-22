@@ -38,7 +38,7 @@
     "total": 2
   },
   "2027-austria": {
-    "checked": "2026-11-19",
+    "checked": "2026-11-22",
     "ok": 2,
     "problems": {},
     "speed": "6-hourly",
@@ -66,7 +66,7 @@
     "total": 1
   },
   "2027-brazil": {
-    "checked": "2026-11-19",
+    "checked": "2026-11-22",
     "ok": 1,
     "problems": {
       "https://www.eventim.com.br/f1saopaulo": "skipped: robots.txt unreachable"
@@ -103,7 +103,7 @@
     "total": 1
   },
   "2027-italy": {
-    "checked": "2026-11-19",
+    "checked": "2026-11-22",
     "ok": 1,
     "problems": {},
     "speed": "6-hourly",
