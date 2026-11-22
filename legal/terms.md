@@ -32,6 +32,8 @@ Prices vary by country and currency. The price shown in the app when you buy is 
 
 **Race Weekend Pass.** Each pass gives 7 days of Pro from the moment you buy it. If you buy another while one is still running, the new 7 days start when the current pass ends. A pass never renews and is never charged again.
 
+**Switching plans.** Annual and Monthly are two lengths of the same Pro plan, and only one can be active at a time. Moving from Monthly to Annual starts Annual straight away: you're charged the Annual price on that day, and Apple refunds the unused part of your current month. Moving from Annual to Monthly takes effect when your paid year ends, so you keep Annual until then and aren't charged twice. The introductory offer is only for new subscribers, so it doesn't apply when you switch. While you have Annual or Monthly, you don't need a Race Weekend Pass, because Pro is already included.
+
 **Managing and cancelling.** Manage or cancel a subscription any time in **Settings › [your name] › Subscriptions** on your iPhone. Cancelling stops future renewals, and you keep Pro until the end of the period you've paid for.
 
 **Refunds.** Apple processes all payments. Refund requests go to Apple at [reportaproblem.apple.com](https://reportaproblem.apple.com) and follow Apple's policies. We can't issue refunds ourselves.

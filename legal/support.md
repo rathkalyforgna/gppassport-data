@@ -29,6 +29,9 @@ Stamps for races you attended while you were Pro, or up to 14 days before you st
 **How do I restore Pro on a new iPhone?**
 Sign in with the same Apple Account, open **Settings › GP Passport Pro** in the app and tap **Restore Purchases**.
 
+**What happens if I switch between Monthly and Annual?**
+Monthly to Annual starts right away. You're charged the Annual price that day, and Apple refunds the unused part of your month. Annual to Monthly starts when your paid year ends, so you keep Annual until then. To switch, open the paywall in **Settings › GP Passport Pro** and tap **Switch to …**, or use **Manage Subscription**.
+
 **How do I cancel or change my subscription?**
 On your iPhone, open **Settings › [your name] › Subscriptions › GP Passport**. You keep Pro until the end of the period you've paid for.
 
