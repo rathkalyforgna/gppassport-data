@@ -18,8 +18,10 @@
   },
   "2026-qatar": {
     "checked": "2026-11-24",
-    "ok": 2,
-    "problems": {},
+    "ok": 1,
+    "problems": {
+      "https://tickets.lcsc.qa": "no readable ticket text"
+    },
     "speed": "hourly",
     "total": 2
   },
@@ -52,7 +54,7 @@
     "total": 1
   },
   "2027-bahrain": {
-    "checked": "2026-11-21",
+    "checked": "2026-11-24",
     "ok": 3,
     "problems": {},
     "speed": "6-hourly",
