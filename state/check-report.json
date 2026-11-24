@@ -18,10 +18,8 @@
   },
   "2026-qatar": {
     "checked": "2026-11-24",
-    "ok": 1,
-    "problems": {
-      "https://tickets.lcsc.qa": "no readable ticket text"
-    },
+    "ok": 2,
+    "problems": {},
     "speed": "hourly",
     "total": 2
   },
@@ -91,7 +89,7 @@
     "total": 1
   },
   "2027-great-britain": {
-    "checked": "2026-11-21",
+    "checked": "2026-11-24",
     "ok": 1,
     "problems": {},
     "speed": "6-hourly",
@@ -126,7 +124,7 @@
     "total": 1
   },
   "2027-madrid": {
-    "checked": "2026-11-21",
+    "checked": "2026-11-24",
     "ok": 2,
     "problems": {},
     "speed": "6-hourly",
@@ -140,7 +138,7 @@
     "total": 1
   },
   "2027-miami": {
-    "checked": "2026-11-21",
+    "checked": "2026-11-24",
     "ok": 2,
     "problems": {},
     "speed": "6-hourly",
@@ -156,7 +154,7 @@
     "total": 1
   },
   "2027-portugal": {
-    "checked": "2026-11-21",
+    "checked": "2026-11-24",
     "ok": 1,
     "problems": {},
     "speed": "6-hourly",
