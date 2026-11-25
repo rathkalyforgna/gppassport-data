@@ -20,8 +20,8 @@ You must be old enough to accept these Terms where you live, or have permission 
 
 | Plan | Price (USD) | How it works |
 | --- | --- | --- |
-| Annual | $69.99 / year | Auto-renewing subscription |
-| Monthly | $9.99 / month | Auto-renewing subscription |
+| Annual | $49.99 / year | Auto-renewing subscription |
+| Monthly | $7.99 / month | Auto-renewing subscription |
 | Race Weekend Pass | $4.99 | One-time purchase: 7 days of Pro, does not renew |
 
 Prices vary by country and currency. The price shown in the app when you buy is the price that applies, and prices may change in the future.
