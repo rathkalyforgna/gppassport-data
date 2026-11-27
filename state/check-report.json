@@ -1,6 +1,6 @@
 {
   "2026-abu-dhabi": {
-    "checked": "2026-11-26",
+    "checked": "2026-11-27",
     "ok": 1,
     "problems": {},
     "speed": "hourly",
@@ -17,14 +17,14 @@
     "total": 3
   },
   "2026-qatar": {
-    "checked": "2026-11-26",
+    "checked": "2026-11-27",
     "ok": 2,
     "problems": {},
     "speed": "hourly",
     "total": 2
   },
   "2027-abu-dhabi": {
-    "checked": "2026-11-26",
+    "checked": "2026-11-27",
     "ok": 1,
     "problems": {},
     "speed": "hourly",
@@ -75,21 +75,21 @@
     "total": 2
   },
   "2027-canada": {
-    "checked": "2026-11-26",
+    "checked": "2026-11-27",
     "ok": 2,
     "problems": {},
     "speed": "hourly",
     "total": 2
   },
   "2027-china": {
-    "checked": "2026-11-26",
+    "checked": "2026-11-27",
     "ok": 1,
     "problems": {},
     "speed": "hourly",
     "total": 1
   },
   "2027-great-britain": {
-    "checked": "2026-11-24",
+    "checked": "2026-11-27",
     "ok": 1,
     "problems": {},
     "speed": "6-hourly",
@@ -110,21 +110,21 @@
     "total": 1
   },
   "2027-japan": {
-    "checked": "2026-11-26",
+    "checked": "2026-11-27",
     "ok": 1,
     "problems": {},
     "speed": "hourly",
     "total": 1
   },
   "2027-las-vegas": {
-    "checked": "2026-11-26",
+    "checked": "2026-11-27",
     "ok": 1,
     "problems": {},
     "speed": "hourly",
     "total": 1
   },
   "2027-madrid": {
-    "checked": "2026-11-24",
+    "checked": "2026-11-27",
     "ok": 2,
     "problems": {},
     "speed": "6-hourly",
@@ -138,7 +138,7 @@
     "total": 1
   },
   "2027-miami": {
-    "checked": "2026-11-24",
+    "checked": "2026-11-27",
     "ok": 2,
     "problems": {},
     "speed": "6-hourly",
@@ -154,14 +154,14 @@
     "total": 1
   },
   "2027-portugal": {
-    "checked": "2026-11-24",
+    "checked": "2026-11-27",
     "ok": 1,
     "problems": {},
     "speed": "6-hourly",
     "total": 1
   },
   "2027-qatar": {
-    "checked": "2026-11-26",
+    "checked": "2026-11-27",
     "ok": 1,
     "problems": {},
     "speed": "hourly",
@@ -185,14 +185,14 @@
     "total": 1
   },
   "2027-turkey": {
-    "checked": "2026-11-26",
+    "checked": "2026-11-27",
     "ok": 2,
     "problems": {},
     "speed": "hourly",
     "total": 2
   },
   "2027-united-states": {
-    "checked": "2026-11-26",
+    "checked": "2026-11-27",
     "ok": 3,
     "problems": {},
     "speed": "hourly",
